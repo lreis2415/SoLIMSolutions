@@ -1,0 +1,2975 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  22, 22
+BEGIN
+    BUTTON      ID_PROJECT_NEW
+    BUTTON      ID_PROJECT_OPEN
+    BUTTON      ID_PROJECT_SAVE
+    BUTTON      ID_APP_ABOUT
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP                  "res\\logo.bmp"
+IDB_TREE_IMAGE          BITMAP                  "res\\solim_icon.bmp"
+IDB_BITMAP_UNCERTAINTY  BITMAP                  "res\\bitmap2.bmp"
+IDB_BITMAP_CAL_ATTRI    BITMAP                  "res\\formula2.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_CROSS        CURSOR                  "res\\cursor2.cur"
+IDC_CURSOR_HAND         CURSOR                  "res\\pointer_.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_FCM DIALOGEX 0, 0, 290, 379
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Purposive Sampling - FCM Clustering"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,47,354,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,169,353,50,14
+    LTEXT           "Select environmental data layers:",IDC_STATIC,15,17,154,
+                    11
+    PUSHBUTTON      "...",IDC_MaskFileBtn,260,130,14,12,WS_DISABLED
+    CONTROL         "Mask",IDC_MaskChk,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    31,132,32,10
+    EDITTEXT        IDC_MaskFileFld,89,130,166,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Masking Value: ",IDC_MaskValueLbl,31,150,50,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_MaskValueFld,90,148,32,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "(pixel with this value will NOT be processed)",
+                    IDC_STATIC_MASK_VALUE_INSTRUCTION,131,150,152,23
+    LTEXT           "Set Kernel Size (to reduce data size)",IDC_STATIC,29,
+                    174,117,8
+    EDITTEXT        IDC_EDIT_KENEL,180,172,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Environmental Data",IDC_STATIC,7,7,274,187
+    GROUPBOX        "FCM Clustering",IDC_STATIC,7,201,273,95
+    LTEXT           "m:",IDC_STATIC,22,216,40,11
+    EDITTEXT        IDC_EDIT_WEIGHT,72,213,51,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ITERATION,215,212,46,14,ES_AUTOHSCROLL
+    LTEXT           "Iteration Number:",IDC_STATIC,151,215,58,8
+    CONTROL         "",IDC_LIST_LAYER,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    21,44,253,80
+    LTEXT           "Cluster Numbers:",IDC_STATIC,20,254,56,8
+    LTEXT           "Result Directory:",IDC_STATIC,17,314,74,8
+    EDITTEXT        IDC_EDIT_RESULT_DIRECTORY,89,312,155,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD_LAYER,25,28,35,13
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_LAYER,69,28,33,13
+    PUSHBUTTON      "...",IDC_BUTTON_DIR,250,311,24,14
+    LTEXT           "Maximum Membership Error at Convergence:",IDC_STATIC,19,
+                    235,144,8
+    EDITTEXT        IDC_EDIT_EPS,179,234,64,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MIN_CLUSTER_NUMBER,73,269,49,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CLUSTER_NUMBER,180,269,46,15,ES_AUTOHSCROLL
+    LTEXT           "Min:",IDC_STATIC,47,271,14,8
+    LTEXT           "Max:",IDC_STATIC,155,271,17,8
+    LTEXT           "~",IDC_STATIC,137,270,8,8
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,7,337,
+                    276,10
+END
+
+IDD_DIALOG_PURPOSIVE_SAMPLE DIALOGEX 0, 0, 264, 195
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Purposive Sampling - Sampling Strategy Design"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK ",IDOK,59,174,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,174,50,14
+    PUSHBUTTON      "Add ",IDC_BUTTON_ADD_CLUSTER_NUMBER,37,18,31,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_CLUSTER_NUMBER,85,17,33,14
+    LTEXT           "Alpha-Cut Threshold:",IDC_STATIC,19,119,69,8
+    EDITTEXT        IDC_EDIT_ALPHA,92,115,141,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_CLUSTER_NUM,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    14,34,238,77
+    LTEXT           "Result Directory:",IDC_STATIC,19,141,74,8
+    EDITTEXT        IDC_EDIT_RESULT_DIRECTORY,92,140,140,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_DIR,237,139,18,14
+    LTEXT           "Specify Cluster Numbers :",IDC_STATIC,15,7,84,8
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,7,161,
+                    250,10
+END
+
+IDD_KNOWLEDGE_FORMVIEW DIALOGEX 0, 0, 355, 280
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "",IDC_STATIC_FRAME,7,7,341,266
+    GROUPBOX        "",IDC_STATIC_RULE_FRAME,19,39,312,209
+    LTEXT           "Rule For:",IDC_STATIC_RULE_FOR,59,18,48,13
+END
+
+IDD_DIALOG_FREEHAND DIALOGEX 0, 0, 340, 189
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "will be used",IDC_CHECK_USE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,28,53,10
+    CONTROL         "",IDC_STATIC_GRAPH_PANEL,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,45,50,129,54
+    LTEXT           "Min",IDC_STATIC_MIN,63,130,12,8
+    LTEXT           "Max",IDC_STATIC_MAX,145,129,14,8
+    LTEXT           "Env. Value:",IDC_STATIC_CURRENTX,204,82,83,8
+    LTEXT           "Optimality:",IDC_STATIC_CURRENTY,203,98,78,8
+    PUSHBUTTON      "<",IDC_BUTTON_MIN_LEFT,55,108,9,14
+    PUSHBUTTON      "<",IDC_BUTTON_MAX_LEFT,147,108,9,14
+    PUSHBUTTON      ">",IDC_BUTTON_MAX_RIGHT,157,108,10,14
+    PUSHBUTTON      ">",IDC_BUTTON_MIN_RIGHT,63,108,9,14
+    LTEXT           "Rule Type:",IDC_STATIC_RULE_TYPE,19,10,157,8
+    LTEXT           "Add/delete point by double clicking.",
+                    IDC_STATIC_ADD_DELETE,201,35,118,8
+    GROUPBOX        "Mouse Location",IDC_STATIC_LOCATION,200,62,119,48
+    LTEXT           "Drag points to adjust their location.",IDC_STATIC_DRAG,
+                    206,50,123,8
+    PUSHBUTTON      "Import From Data Mining Result",IDC_BUTTON_IMPORT_DM,
+                    161,11,115,14
+END
+
+IDD_DIALOG_RANGE DIALOGEX 0, 0, 317, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "will be used",IDC_CHECK_USE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,19,53,10
+    LTEXT           "Max",IDC_STATIC_MAX,173,117,14,8
+    CONTROL         "",IDC_STATIC_GRAPH_PANEL,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,65,33,104,51
+    LTEXT           "Low Unity:",IDC_STATIC_LOW_UNITY,199,48,35,8
+    LTEXT           "High Unity:",IDC_STATIC_HIGH_UNITY,263,48,36,8
+    LTEXT           "Low Cross:",IDC_STATIC_LOW_CROSS,202,76,36,8
+    LTEXT           "High Cross:",IDC_STATIC_HIGH_CROSS,263,73,38,8
+    EDITTEXT        IDC_EDIT_LOW_UNITY,197,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HIGH_UNITY,262,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOW_CROSS,199,85,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HIGH_CROSS,263,85,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_CURVE_TYPE,236,30,48,52,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Curve Type:",IDC_STATIC_CURVE_TYPE,193,33,41,8
+    LTEXT           "Min",IDC_STATIC_MIN,17,116,12,8
+    PUSHBUTTON      "Update Rule",IDC_BUTTON_UPDATE,215,102,50,14
+    PUSHBUTTON      "<",IDC_BUTTON_MIN_LEFT,65,88,9,14
+    PUSHBUTTON      "<",IDC_BUTTON_MAX_LEFT,153,89,9,14
+    PUSHBUTTON      ">",IDC_BUTTON_MAX_RIGHT,163,89,10,14
+    PUSHBUTTON      ">",IDC_BUTTON_MIN_RIGHT,73,88,9,14
+    LTEXT           "Rule Type:",IDC_STATIC_RULE_TYPE,8,4,157,8
+    PUSHBUTTON      "Change to Freehand Rule",IDC_BUTTON_CHANGETOFREEHAND,
+                    218,114,85,14
+END
+
+IDD_DIALOG_WORD DIALOGEX 0, 0, 334, 185
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "will be used",IDC_CHECK_USE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,229,25,53,10
+    LTEXT           "Min",IDC_STATIC_MIN,47,119,12,8
+    LTEXT           "Max",IDC_STATIC_MAX,135,117,14,8
+    CONTROL         "",IDC_STATIC_GRAPH_PANEL,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,38,39,120,53
+    COMBOBOX        IDC_COMBO_CURVENAME,242,89,60,63,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Change to Freehand Rule",IDC_BUTTON_CHANGETOCURVERULE,
+                    235,107,89,14
+    EDITTEXT        IDC_EDIT_LIBFILENAME,248,44,53,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE_LIBFILE,311,43,19,14
+    LTEXT           "Word Library Name:",IDC_STATIC_LIBNAME,188,38,65,8
+    PUSHBUTTON      "<",IDC_BUTTON_MAX_LEFT,113,98,11,14
+    PUSHBUTTON      ">",IDC_BUTTON_MAX_RIGHT,124,98,10,14
+    PUSHBUTTON      ">",IDC_BUTTON_MIN_RIGHT,53,98,9,14
+    PUSHBUTTON      "<",IDC_BUTTON_MIN_LEFT2,45,98,9,14
+    LTEXT           "Rule Type:",IDC_STATIC_RULE_TYPE,19,20,157,8
+    COMBOBOX        IDC_COMBO_TERRAIN_ATTRI,243,70,60,55,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_ENUMERATED DIALOGEX 0, 0, 314, 192
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "will be used",IDC_CHECK_USE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,211,20,86,10
+    LTEXT           "Min",IDC_STATIC_MIN,62,135,12,8
+    LTEXT           "Max",IDC_STATIC_MAX,120,135,14,8
+    CONTROL         "",IDC_STATIC_GRAPH_PANEL,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,55,50,101,58
+    CONTROL         "",IDC_LIST_ITEM,"SysListView32",LVS_REPORT | 
+                    LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,
+                    178,61,106,50
+    PUSHBUTTON      "Add ",IDC_BUTTON_ADD_ITEM,180,44,37,14
+    PUSHBUTTON      "Remove",IDC_BUTTON_REMOVE_ITEM,227,44,32,14
+    LTEXT           "Env. Value:",IDC_STATIC_CURRENTX,176,115,87,8
+    LTEXT           "Optimality:",IDC_STATIC_CURRENTY,177,126,68,8
+    PUSHBUTTON      "<",IDC_BUTTON_MIN_LEFT,60,115,9,14
+    PUSHBUTTON      "<",IDC_BUTTON_MAX_LEFT,129,115,9,14
+    PUSHBUTTON      ">",IDC_BUTTON_MAX_RIGHT,138,115,10,14
+    PUSHBUTTON      ">",IDC_BUTTON_MIN_RIGHT,71,115,9,14
+    LTEXT           "Rule Type:",IDC_STATIC_RULE_TYPE,7,20,157,8
+END
+
+IDD_DIALOG_POINT DIALOGEX 0, 0, 315, 176
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "will be used",IDC_CHECK_USE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,19,23,53,10
+    CONTROL         "",IDC_STATIC_GRAPH_PANEL,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,48,38,109,47
+    COMBOBOX        IDC_COMBO_CURVE_TYPE,249,31,48,52,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Curve Type:",IDC_STATIC_CURVE_TYPE,201,32,41,8
+    LTEXT           "Central X:",IDC_STATIC_CENTRAL_X,210,47,33,8
+    LTEXT           "Central Y:",IDC_STATIC_CENTRAL_Y,274,48,33,8
+    LTEXT           "Left Width:",IDC_STATIC_LEFT_WIDTH,201,86,37,8
+    LTEXT           "Right Width:",IDC_STATIC_RIGHT_WIDTH,263,85,41,8
+    EDITTEXT        IDC_EDIT_CENTRAL_X,206,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CENTRAL_Y,270,58,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LEFT_WIDTH,202,93,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RIGHT_WIDTH,261,97,40,14,ES_AUTOHSCROLL
+    LTEXT           "Max",IDC_STATIC_MAX,126,115,14,8
+    LTEXT           "Min",IDC_STATIC_MIN,48,114,12,8
+    PUSHBUTTON      "<",IDC_BUTTON_MIN_LEFT,54,90,9,14
+    PUSHBUTTON      "<",IDC_BUTTON_MAX_LEFT,125,90,9,14
+    PUSHBUTTON      ">",IDC_BUTTON_MAX_RIGHT,134,90,10,14
+    PUSHBUTTON      ">",IDC_BUTTON_MIN_RIGHT,62,90,9,14
+    LTEXT           "Rule Type:",IDC_STATIC_RULE_TYPE,19,6,157,8
+    PUSHBUTTON      "Update Rule",IDC_BUTTON_UPDATE_RULE,211,113,50,14
+    PUSHBUTTON      "Change to Freehand Rule",IDC_BUTTON_CHANGETOCURVERULE,
+                    196,127,89,14
+END
+
+IDD_DIALOG_PROJECT_SUMMARY DIALOGEX 0, 0, 321, 140
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Project Summary"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,107,114,50,14
+    LTEXT           "Project Name:",IDC_STATIC_PROJECT_NAME,22,24,46,8
+    LTEXT           "Number of Environmental Data Layer:",
+                    IDC_STATIC_LAYER_NUM,22,55,122,8
+    LTEXT           "Number of Soil Type in Knowledge Base:",
+                    IDC_STATIC_SOILTYPE_NUM,22,83,129,8
+    EDITTEXT        IDC_EDIT_PROJECT_NAME,173,22,119,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_SOILTYPE_NUM,171,84,119,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_LAYER_NUM,173,54,119,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DIALOG_SPATIAL DIALOGEX 0, 0, 244, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Spatial Setting for Occurrence/Exclusion"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,171,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,171,50,14
+    EDITTEXT        IDC_EDIT_X,85,25,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y,85,43,130,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SEARCH_DIST,85,69,132,14,ES_AUTOHSCROLL
+    LTEXT           "X:",IDC_STATIC,26,28,8,8
+    LTEXT           "Y:",IDC_STATIC,26,44,8,8
+    CONTROL         "Use distance similarity",IDC_CHECK_USE_SIM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,107,116,10
+    EDITTEXT        IDC_EDIT_DIST_DECAY_FACTOR,112,139,103,14,ES_AUTOHSCROLL
+    LTEXT           "Distance Decay Factor:",IDC_STATIC,23,141,76,8
+    GROUPBOX        "Central Location",IDC_STATIC,17,16,208,46
+    GROUPBOX        "Influence Area",IDC_STATIC,11,2,220,96
+    GROUPBOX        "Weighting Similarity by Distance",IDC_STATIC,14,124,214,
+                    39
+    LTEXT           "Impact Radius:",IDC_STATIC,26,70,49,8
+END
+
+IDD_METADATA_FORMVIEW DIALOGEX 0, 0, 185, 93
+STYLE DS_SETFONT | WS_CHILD
+FONT 9, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_LIST_METADATA,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,1,2,184,91
+END
+
+IDD_DIALOG_NORULE DIALOGEX 0, 0, 317, 160
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DIALOG_NEW_PRO DIALOGEX 0, 0, 268, 94
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Project"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,67,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,67,50,14
+    LTEXT           "Project Name:",IDC_STATIC,5,15,46,8
+    LTEXT           "Project Directory:",IDC_STATIC,5,39,58,8
+    EDITTEXT        IDC_EDIT_PRO_NAME,72,15,147,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PRO_DIR,72,39,148,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Browse",IDC_BUTTON_BROWSE,228,39,36,14
+END
+
+IDD_DIALOG_ADD_LAYER DIALOGEX 0, 0, 283, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Add Layer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,63,49,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,49,50,14
+    LTEXT           "Layer File:",IDC_STATIC,18,7,34,8
+    EDITTEXT        IDC_EDIT_LAYER_FILE_PATH,34,24,189,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE_LAYER_FILE,229,24,34,14
+END
+
+IDD_DIALOG_SAVEAS DIALOGEX 0, 0, 186, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Save Project File as"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,48,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,108,49,50,14
+    EDITTEXT        IDC_EDIT_PRO_NAME,66,20,96,14,ES_AUTOHSCROLL
+    LTEXT           "Project Name:",IDC_STATIC,8,22,46,8
+END
+
+IDD_DIALOG_RENAME DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,54,50,14
+    EDITTEXT        IDC_EDIT_NAME,35,26,103,14,ES_AUTOHSCROLL
+    LTEXT           "Please input the name of the",IDC_STATIC,15,6,100,14
+    LTEXT           "Static",IDC_STATIC_NEW_ITEM,113,6,19,8
+END
+
+IDD_WIZARD_RULE_NAME DIALOGEX 0, 0, 167, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Name of the rule:",IDC_STATIC,21,13,95,8
+    EDITTEXT        IDC_EDIT_RULE_NAME,28,45,112,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_ENUM_ITEM DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New/Modify Item"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,54,50,14
+    EDITTEXT        IDC_EDIT_ENUM_ITEM,35,26,115,14,ES_AUTOHSCROLL
+    LTEXT           "Please input the item number:",IDC_STATIC,15,9,123,14
+END
+
+IDD_WIZARD_POINT_CENTER DIALOGEX 0, 0, 151, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Central X:",IDC_STATIC_X,24,7,33,8
+    LTEXT           "Central Y:",IDC_STATIC_Y,23,33,42,8
+    EDITTEXT        IDC_EDIT_CENTRAL_X,49,17,81,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CENTRAL_Y,49,45,78,14,ES_AUTOHSCROLL
+END
+
+IDD_WIZARD_RANGE_KEY_POINTS DIALOGEX 0, 0, 161, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "LowUnity:",IDC_STATIC_LOW_UNITY,23,8,33,8
+    LTEXT           "HighUnity:",IDC_STATIC_HIGH_UNITY,87,8,34,8
+    LTEXT           "LowCross:",IDC_STATIC_LOW_CROSS,26,44,34,8
+    LTEXT           "HighCross:",IDC_STATIC_HIGH_CROSS,87,44,36,8
+    EDITTEXT        IDC_EDIT_LOW_UNITY,24,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HIGH_UNITY,86,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LOW_CROSS,23,57,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HIGH_CROSS,87,58,40,14,ES_AUTOHSCROLL
+END
+
+IDD_ConvertTacitProjectDlg DIALOGEX 0, 0, 321, 187
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Convert from Tacit Point"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,163,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,226,163,50,14
+    LTEXT           "Old Project Directory:",IDC_STATIC,24,19,70,8
+    LTEXT           "Label File:",IDC_STATIC,24,35,33,8
+    LTEXT           "Point File:",IDC_STATIC,24,56,32,8
+    LTEXT           "Cell Name File:",IDC_STATIC,24,74,48,8
+    EDITTEXT        IDC_OldPrjDirFld,100,16,180,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_LabelFileNameFld,100,34,181,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PntFileNameFld,100,52,182,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CellNameEdit,100,73,182,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NewPrjNameFld,100,119,185,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NewPrjDirFld,100,137,184,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_NewDirBtn,289,138,13,14
+    GROUPBOX        "Old Version Project",IDC_STATIC,7,7,300,91
+    GROUPBOX        "New Version Project",IDC_STATIC,7,106,300,54
+    LTEXT           "New Project Name:",IDC_STATIC,22,121,62,8
+    LTEXT           "New Project Directory:",IDC_STATIC,20,138,74,8
+    PUSHBUTTON      "...",IDC_OldDirBtn,287,17,13,14
+    PUSHBUTTON      "...",IDC_LabelFileBtn,287,37,13,14
+    PUSHBUTTON      "...",IDC_PntFileBtn,287,54,13,14
+    PUSHBUTTON      "...",IDC_CellNameBtn,287,74,13,14
+END
+
+IDD_ConvertOldProjectDlg DIALOGEX 0, 0, 318, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Convert from SoLIM Suite 1.5/ SoLIM Solution 2.0"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,146,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,173,145,50,14
+    LTEXT           "Old Project Directory:",-1,24,22,70,8
+    LTEXT           "Old Project File:",-1,24,45,52,8
+    EDITTEXT        IDC_OldPrjDirFld,100,20,180,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_OldPrjFileFld,100,42,181,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NewPrjNameFld,100,96,185,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NewPrjDirFld,100,115,185,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_NewDirBtn,288,114,13,14
+    GROUPBOX        "Old Version Project",-1,7,7,297,61
+    GROUPBOX        "New Version Project",-1,7,80,297,54
+    LTEXT           "New Project Name:",-1,20,97,62,8
+    LTEXT           "New Project Directory:",-1,20,116,74,8
+    PUSHBUTTON      "...",IDC_OldDirBtn,287,21,13,14
+    PUSHBUTTON      "...",IDC_OldPrjFileBtn,287,42,13,14
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 287, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About SoLIM Solutions 5.0"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         187,IDC_STATIC,"Static",SS_BITMAP,7,15,67,52
+    LTEXT           "Digital Soil Mapping Software: SoLIM Solutions 5.0",
+                    IDC_STATIC,87,17,193,8,SS_NOPREFIX | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,203,61,50,14,WS_GROUP
+    LTEXT           "Developed by: A-Xing Zhu, James E. Burt",IDC_STATIC,88,
+                    33,180,8
+    LTEXT           "Programmer: Fei Du ",IDC_STATIC,88,49,114,13
+END
+
+IDD_INFERENCE_FORMVIEW DIALOGEX 0, 0, 370, 278
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "Create Check File",IDC_CHECK_CHECK_FILE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,36,188,72,10
+    CONTROL         "Use Mask ",IDC_CHECK_USE_MASK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,26,140,48,10
+    EDITTEXT        IDC_EDIT_MASK,84,146,217,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BNT_CHOOSE_MASK,311,146,23,14
+    LTEXT           "Masking Value:",IDC_STATIC_MASK_VALUE,36,165,48,8
+    EDITTEXT        IDC_EDIT_MASK_VALUE,102,164,40,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_CHOOSE_SOIL,32,39,313,73,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Execute ",IDC_BTN_RUN_INFERENCE,21,243,78,14
+    GROUPBOX        "Mask ",IDC_STATIC_MASK_FRAME,21,129,322,50
+    LTEXT           "Save Result In:",IDC_STATIC_RESULT_DIR,34,217,50,8
+    EDITTEXT        IDC_EDIT_RESULT_DIR,100,214,199,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BTN_RESULT_DIR,304,214,28,14
+    GROUPBOX        "",IDC_STATIC_FRAME,7,7,356,264
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,112,245,
+                    233,13
+    LTEXT           "(pixel with this value will NOT be processed)",
+                    IDC_STATIC_MASK_VALUE_INSTRUCTION,147,166,202,8
+    GROUPBOX        "Soil Types to Be Inferred",IDC_STATIC_SOIL_TO_INFER,26,
+                    21,324,100
+    GROUPBOX        "Inference Result",IDC_STATIC_INFER_RESULT_FRAME,17,204,
+                    330,29
+    LTEXT           "Masking File:",IDC_STATIC_MASK_FILE,29,150,42,8
+END
+
+IDD_MFDDlg DIALOGEX 0, 0, 291, 153
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Accumulation-Multiple Flow Direction "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,126,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,153,127,50,12
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,251,15,15,13
+    EDITTEXT        IDC_InputFileNameFld,70,14,178,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,251,33,15,13
+    EDITTEXT        IDC_OutputFileNameFld,70,33,176,13,ES_AUTOHSCROLL
+    LTEXT           "DEM File: ",IDC_InputFileNameLbl,21,15,32,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File: ",IDC_OutputFileNameLbl,21,34,41,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "MFD-Quinn(1991)",IDC_RADIO_Quinn,"Button",
+                    BS_AUTORADIOBUTTON,38,67,73,10
+    CONTROL         "MFD-md (Qin et al.2007)",IDC_RADIO_md,"Button",
+                    BS_AUTORADIOBUTTON,156,67,95,10
+    GROUPBOX        "Method",IDC_STATIC,22,57,251,26
+    LTEXT           "P for MFD-Quinn:",IDC_STATIC,36,96,56,8
+    EDITTEXT        IDC_EDIT_P,133,95,56,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,19,113,
+                    250,10
+END
+
+IDD_3drToAsciiDlg DIALOGEX 0, 0, 270, 117
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "3dr To Grid Ascii"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_InputFileFld,56,9,191,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileBtn,248,9,18,14
+    EDITTEXT        IDC_OutputFileFld,56,34,190,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileBtn,248,34,18,14
+    LTEXT           "Input File: ",IDC_InputFileLbl,13,11,36,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    LTEXT           "Output File: ",IDC_OutputFileLbl,13,36,41,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    DEFPUSHBUTTON   "OK",IDOK,69,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,92,50,14
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,13,65,
+                    243,14
+END
+
+IDD_PropertyMapDlg DIALOGEX 0, 0, 287, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Creating Property Map"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WorkingDirFld,69,12,186,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_WorkingDirBtn,260,12,18,14
+    EDITTEXT        IDC_PropertyMapInFileFld,69,34,187,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PropertyMapInFileBtn,260,34,18,14
+    EDITTEXT        IDC_PropertyMapOutFileFld,69,56,188,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PropertyMapOutFileBtn,260,56,18,14
+    DEFPUSHBUTTON   "OK",IDPropertyMapOK,62,139,50,14
+    PUSHBUTTON      "Cancel",IDPropertyMapCancel,171,139,50,14
+    LTEXT           "Lookup Table:",IDC_PropertyMapInFileLbl,6,36,46,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File:",IDC_PropertyMapOutFileLbl,6,58,39,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Progress1",IDC_PropertyMapProBar,"msctls_progress32",
+                    WS_BORDER,10,119,260,13
+    LTEXT           "Result Directory:",IDC_WorkingDirLbl,6,14,55,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Mask",IDC_MaskChk,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    31,78,33,12
+    EDITTEXT        IDC_MaskFileFld,69,75,187,17,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Masking Value: ",IDC_MaskValueLbl,14,97,50,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_MaskValueFld,70,97,32,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "(pixel with this value will NOT be processed)",
+                    IDC_STATIC_MASK_VALUE_INSTRUCTION,121,98,141,8
+    PUSHBUTTON      "...",IDC_MaskFileBtn,260,78,18,14
+END
+
+IDD_ValueAtSiteDlg DIALOGEX 0, 0, 262, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Values at Sample Sites"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDValueAtSiteOK,53,121,50,14
+    PUSHBUTTON      "Cancel",IDValueAtSiteCancel,151,122,50,14
+    EDITTEXT        IDC_ValueAtSitePntFld,51,7,178,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ValueAtSitePntBtn,230,7,18,14
+    LTEXT           "Point File:",IDC_ValueAtSitePntLbl,8,7,32,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ValueAtSiteDataFld,51,25,178,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ValueAtSiteDataBtn,230,25,18,14
+    EDITTEXT        IDC_ValueAtSiteOutFld,51,44,178,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ValueAtSiteOutBtn,230,44,18,14
+    LTEXT           "Data File:",IDC_ValueAtSiteDataLbl,8,26,32,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File:",IDC_ValueAtSiteOutLbl,8,45,39,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "",IDC_ValueAtSiteProBar,"msctls_progress32",WS_BORDER,8,
+                    100,246,12
+    CONTROL         "Nearest Neighbor",IDC_NearestNeighborRdo,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,55,68,80,10
+    CONTROL         "Bilinear",IDC_BilinearRdo,"Button",BS_AUTORADIOBUTTON,
+                    55,84,48,10
+END
+
+IDD_ErrorMatrixPointListMapDlg DIALOGEX 0, 0, 300, 271
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Point List vs. Map"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDErrorMatrixOK,62,231,50,14
+    PUSHBUTTON      "Cancel",IDErrorMatrixCancel,181,231,50,14
+    EDITTEXT        IDC_LookupTableFld,94,30,180,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_LookupTableBtn,275,29,14,14
+    LTEXT           "Observed Point List File:",IDC_ObservedLbl,2,15,78,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Progress1",IDC_ErrorMatrixProBar,"msctls_progress32",
+                    WS_BORDER,12,214,274,14
+    EDITTEXT        IDC_ErrorMatrixHardenedMapFld,94,48,180,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ErrorMatrixHardenedMapBtn,276,48,14,14
+    LTEXT           "Hardened Map File:",IDC_ErrorMatrixHardenedMapLbl,2,52,
+                    63,8,NOT WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Neighborhood Size:",IDC_ErrorMatrixNeighborLbl,3,137,63,
+                    8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ErrorMatrixNeighborFld,95,135,90,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ObservedBtn,276,11,14,14
+    LTEXT           "Look-up Table File:",IDC_LookupTableLbl,2,33,61,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ObservedFld,93,11,181,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ErrorMatrixMatrixFld,95,77,178,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_ErrorMatrixMatrixBtn,275,77,14,14
+    LTEXT           "Output Error Matrix File:",IDC_ErrorMatrixMatrixLbl,2,
+                    79,79,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_AccuracyReportFld,96,96,174,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Output Accuracy Report File:",IDC_AccuracyReportLbl,2,
+                    97,94,8,NOT WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output Mismatch List File:",IDC_STATIC,2,115,93,8
+    EDITTEXT        IDC_MismatchListFld,96,114,173,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "(should be an odd number)",IDC_STATIC,193,136,86,12
+    PUSHBUTTON      "...",IDC_MaskFileBtn,275,167,14,12,WS_DISABLED
+    CONTROL         "Mask",IDC_MaskChk,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    8,167,32,10
+    LTEXT           "Masking Value: ",IDC_MaskValueLbl,99,186,50,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_MaskValueFld,152,184,32,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "(pixel with this value will NOT be processed)",
+                    IDC_STATIC_MASK_VALUE_INSTRUCTION,199,182,82,24
+    EDITTEXT        IDC_MaskFileFld,96,167,176,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDD_ClipDlg DIALOGEX 0, 0, 264, 286
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Clip"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,64,264,50,15
+    PUSHBUTTON      "Cancel",IDCANCEL,146,264,50,15
+    LTEXT           "Input File:",IDC_InputFileNameLbl,10,7,34,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_InputFileNameFld,60,7,172,15,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_ScissorExtentGbx,20,146,231,97
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,10,29,39,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,60,27,172,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,235,7,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,235,27,15,15
+    LTEXT           "Xmin:",IDC_XminLbl,30,175,18,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_XminFld,53,175,52,15,ES_AUTOHSCROLL
+    LTEXT           "Ymin:",IDC_YminLbl,30,197,18,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_YminFld,53,197,52,15,ES_AUTOHSCROLL
+    LTEXT           "Xmax:",IDC_XmaxLbl,154,160,21,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_XmaxFld,181,159,52,15,ES_AUTOHSCROLL
+    LTEXT           "Ymax:",IDC_YmaxLbl,154,181,21,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_YmaxFld,181,179,52,15,ES_AUTOHSCROLL
+    LTEXT           "No. of Rows:",IDC_NumOfRowsLbl,133,204,43,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_NumOfRowsFld,181,204,52,15,ES_AUTOHSCROLL
+    LTEXT           "No. of Cols:",IDC_NumOfColsLbl,133,224,39,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_NumOfColsFld,181,224,52,15,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,10,250,250,10
+    CONTROL         "",IDC_XYMaxRdo,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    121,159,16,8
+    CONTROL         "",IDC_NoRowColRdo,"Button",BS_AUTORADIOBUTTON,121,204,
+                    12,8
+    GROUPBOX        "",IDC_ExistingFileGrp,11,68,235,52
+    EDITTEXT        IDC_ExistingFileNameFld,27,80,189,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ExistingFileNameBtn,219,80,15,15
+    CONTROL         "Use Existing File: ",IDC_ExsitingFileRdo,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,10,58,72,10
+    CONTROL         "Specify Extent: ",IDC_SpecifyExtRdo,"Button",
+                    BS_AUTORADIOBUTTON,10,133,67,10
+    CONTROL         "3dr",IDC_3drRdo,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    126,104,28,10
+    CONTROL         "3dm",IDC_3dmRdo,"Button",BS_AUTORADIOBUTTON,179,104,28,
+                    10
+END
+
+IDD_ErrorMatrixPointToPointDlg DIALOGEX 0, 0, 303, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Point List vs. Point List"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,82,160,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,165,160,50,14
+    EDITTEXT        IDC_InferredFld,96,29,184,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InferredBtn,281,28,14,14
+    LTEXT           "Inferred Point List File:",IDC_InferredLbl,1,32,74,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    CONTROL         "",IDC_ErrorMatrixProBar,"msctls_progress32",WS_BORDER,
+                    21,131,256,14
+    EDITTEXT        IDC_ErrorMatrixMatrixFld,96,63,183,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_ErrorMatrixMatrixBtn,281,63,14,14
+    LTEXT           "Output Error Matrix File:",IDC_ErrorMatrixMatrixLbl,2,
+                    64,79,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_AccuracyReportFld,96,82,184,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Output Accuracy Report File:",IDC_AccuracyReportLbl,2,
+                    83,94,8,NOT WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output Mismatch List File:",IDC_STATIC,2,101,83,8
+    EDITTEXT        IDC_MismatchListFld,96,100,183,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Observed Point List File:",IDC_ObservedLbl,1,14,78,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    PUSHBUTTON      "...",IDC_ObservedBtn,281,11,14,14
+    EDITTEXT        IDC_ObservedFld,96,11,184,14,ES_AUTOHSCROLL
+END
+
+IDD_ReclassDlg DIALOGEX 0, 0, 274, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Reclass"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,75,100,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,178,101,50,14
+    EDITTEXT        IDC_InputFileNameFld,66,13,173,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,240,13,17,14
+    EDITTEXT        IDC_LookTBFileFld,66,35,173,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_LookTBFileBtn,240,35,17,14
+    EDITTEXT        IDC_OutFileNameFld,66,57,173,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutFileNameBtn,240,57,17,14
+    LTEXT           "Lookup Table:",IDC_LookTBFileLbl,10,35,46,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File:",IDC_OutFileNameLbl,10,57,39,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,12,81,242,11
+    LTEXT           "Input File:",IDC_InputFileNameLbl,10,13,34,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+END
+
+IDD_StreamDlg DIALOGEX 0, 0, 248, 247
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Streams"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,49,225,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,146,226,50,14
+    LTEXT           "DEM File:",IDC_InputFileNameLbl,11,13,30,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_InputFileNameFld,53,12,165,15,ES_AUTOHSCROLL
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,11,33,39,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,53,32,165,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,222,12,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,222,32,15,15
+    LTEXT           "Define Streams:  Flow Accumulation >",IDC_ThresholdLbl,
+                    24,81,122,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_ThresholdFld,171,79,42,15,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,14,207,225,11
+    GROUPBOX        "",IDC_OCallaghanGrp,11,69,226,51,WS_GROUP
+    LTEXT           "Upper Threshold: ",IDC_SkidmoreUpperLbl,24,148,58,8
+    EDITTEXT        IDC_SkidmoreUpperFld,100,146,116,14,ES_AUTOHSCROLL
+    LTEXT           "Lower Threshold: ",IDC_SkidmoreLowerLbl,24,168,58,8
+    EDITTEXT        IDC_SkidmoreLowerFld,100,166,114,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_SkidmoreGrp,12,136,215,54
+    CONTROL         "O'Callaghan and Mark's",IDC_OCallaghanRdo,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,11,59,104,10
+    CONTROL         "Skidmore's",IDC_SkidmoreRdo,"Button",BS_AUTORADIOBUTTON,
+                    11,126,56,10
+    CONTROL         "Peuker and Douglas'",IDC_PeukerRdo,"Button",
+                    BS_AUTORADIOBUTTON,11,194,92,10
+    COMBOBOX        IDC_CodingAlgCmb,100,100,110,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Coding method: ",IDC_CodingAlgLbl,24,100,54,8
+END
+
+IDD_RidgeLineDlg DIALOGEX 0, 0, 356, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ridge Lines"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,223,12,15,15
+    EDITTEXT        IDC_InputFileNameFld,57,13,163,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,223,31,15,15
+    EDITTEXT        IDC_OutputFileNameFld,57,31,164,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LabelFld,258,29,50,15,ES_AUTOHSCROLL
+    CONTROL         "Peucker and Douglas's",IDC_PDAlgRdo,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,78,87,10
+    CONTROL         "O'Callaghan and Mark's",IDC_OMAlgRdo,"Button",
+                    BS_AUTORADIOBUTTON,22,97,90,10
+    CONTROL         "Skidmore's",IDC_SkidmoreAlgRdo,"Button",
+                    BS_AUTORADIOBUTTON,22,116,49,10
+    CONTROL         "Shi's",IDC_ShiAlgRdo,"Button",BS_AUTORADIOBUTTON,22,135,
+                    30,10
+    EDITTEXT        IDC_ElevationFld,216,69,44,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GradientFld,216,89,44,15,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,102,209,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,197,210,50,14
+    LTEXT           "DEM File:",IDC_InputFileNameLbl,12,13,30,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,12,32,39,8,0,
+                    WS_EX_RIGHT
+    GROUPBOX        "Algorithm:",IDC_AlgGrp,5,56,129,134
+    LTEXT           "Ridge label:",IDC_LabelLbl,252,14,38,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    LTEXT           "Slope < ",IDC_GradientLbl,145,89,28,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    GROUPBOX        "Topgraphic Controls:",IDC_TopoGrp,140,56,199,133
+    LTEXT           "Elevation > ",IDC_ElevationLbl,145,70,40,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    6,196,342,9
+    EDITTEXT        IDC_GradientFileFld,216,109,101,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GradientFileBtn,319,109,15,14
+    LTEXT           "Slope File: ",IDC_GradientFileLbl,145,109,36,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_TerrainPartitionFileFld,216,128,100,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TerrainPartitionFileBtn,318,128,15,14
+    LTEXT           "Terrain Partition File: ",IDC_TerrainPartitionFileLbl,
+                    145,128,70,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_TPEleDiffFld,216,148,44,15,ES_AUTOHSCROLL
+    LTEXT           "TP Elevation Diff >",IDC_TPEleDiffLbl,145,151,61,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_TopProportionFld,216,167,44,15,ES_AUTOHSCROLL
+    LTEXT           "In top proportion: ",IDC_TopProportionLbl,145,170,60,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+END
+
+IDD_BrdNrwRidgeDlg DIALOGEX 0, 0, 333, 197
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_OVERLAPPEDWINDOW
+CAPTION "Broad and Narrow Ridges "
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,93,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,171,50,14
+    LTEXT           "Ridge label: ",IDC_LabelLbl,247,18,40,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_LabelFld,253,33,48,15,ES_AUTOHSCROLL
+    GROUPBOX        "Parameters:",IDC_BrdNrwGrp,14,74,308,64
+    LTEXT           "Upper limit of width:",IDC_UpperLbl,34,112,65,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_UpperFld,113,112,38,15,ES_AUTOHSCROLL
+    LTEXT           "Lower limit of width:",IDC_LowerLbl,34,93,65,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_LowerFld,113,93,38,15,ES_AUTOHSCROLL
+    LTEXT           "Flat area >",IDC_FlatAreaLbl,202,112,37,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_FlatAreaFld,253,111,40,15,ES_AUTOHSCROLL
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,14,51,39,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,64,51,154,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,219,51,15,15
+    LTEXT           "Ridgeline File:",IDC_InputRidgeLbl,14,12,45,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_InputRidgeFld,64,12,153,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputRidgelineBtn,219,12,15,15
+    LTEXT           "Slope<",IDC_GradLbl,202,95,24,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_GradFld,253,91,38,15,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,
+                    14,147,306,13
+    LTEXT           "Slope File:",IDC_InputGradientLbl,14,32,34,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_InputGradientFld,64,32,153,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputGradientBtn,219,32,15,15
+END
+
+IDD_HardenMapDlg DIALOGEX 0, 0, 387, 222
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Hardening Map"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,221,183,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,289,183,50,14
+    CONTROL         "HSV",IDC_HSVRdo,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    271,80,29,10
+    CONTROL         "Ljg",IDC_LjgRdo,"Button",BS_AUTORADIOBUTTON,271,92,25,
+                    10
+    LTEXT           "Hardened Output File: ",IDC_OutputPrefixLbl,217,24,74,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_OutputPrefixFld,220,35,144,12,ES_AUTOHSCROLL
+    LTEXT           "Color Model: ",IDC_ColorModelLbl,226,80,43,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Gamma Correction",IDC_GammaCorrectionChk,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,220,57,75,10
+    PUSHBUTTON      "Add",IDC_LAYERADD,77,5,28,12
+    PUSHBUTTON      "Delete",IDC_LAYERDEL,111,5,27,12
+    PUSHBUTTON      "Load",IDC_DATALOAD,13,5,26,12
+    PUSHBUTTON      "Save",IDC_DATASAVE,45,5,26,12
+    CONTROL         "",IDC_LayerList,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,13,21,192,197
+    PUSHBUTTON      "...",IDC_OutputBtn,367,36,15,12
+    PUSHBUTTON      "...",IDC_MaskFileBtn,367,109,14,12,WS_DISABLED
+    CONTROL         "Mask",IDC_MaskChk,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    212,110,32,10
+    EDITTEXT        IDC_MaskFileFld,242,109,122,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Masking Value: ",IDC_MaskValueLbl,212,130,50,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_MaskValueFld,243,142,32,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "(pixel with this value will NOT be processed)",
+                    IDC_STATIC_MASK_VALUE_INSTRUCTION,283,141,90,23
+END
+
+IDD_CalcStatDlg DIALOGEX 0, 0, 234, 86
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Calculate Statistics"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,48,62,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,63,50,14
+    LTEXT           "Input File:",IDC_InputLbl,8,14,34,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_InputFld,50,11,157,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputBtn,209,12,15,14
+    LTEXT           "Output File:",IDC_OutputLbl,8,35,39,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFld,50,34,159,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputBtn,209,35,15,14
+END
+
+IDD_OverlayDlg DIALOGEX 0, 0, 279, 155
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Overlay"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,63,127,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,169,127,50,14
+    LTEXT           "First Input File: ",IDC_FstInputLbl,9,14,52,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_FstInputFld,74,12,175,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_FstInputBtn,252,12,13,12
+    CONTROL         "3dr",IDC_ThreeDRRdo,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,120,31,26,10
+    CONTROL         "3dm",IDC_ThreeDMRdo,"Button",BS_AUTORADIOBUTTON,182,31,
+                    29,10
+    LTEXT           "Output File: ",IDC_OutputLbl,9,72,41,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFld,74,72,177,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputBtn,252,72,13,12
+    LTEXT           "Second Input File: ",IDC_SndInputLbl,9,50,61,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_SndInputFld,74,49,175,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SndInputBtn,252,51,13,12
+    LTEXT           "Algorithm: ",IDC_AlgLbl,9,95,36,8,0,WS_EX_RIGHT
+    COMBOBOX        IDC_AlgCmb,74,92,71,135,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_ValueFld,187,92,40,12,ES_AUTOHSCROLL
+    RTEXT           "Value: ",IDC_ValueLbl,157,95,29,8
+END
+
+IDD_FillShaveDEMDlg DIALOGEX 0, 0, 303, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Filling Pits and Shaving Peaks"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,71,168,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,168,50,14
+    LTEXT           "DEM File: ",IDC_InputFileNameLbl,16,16,32,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_InputFileNameFld,67,12,196,15,ES_AUTOHSCROLL
+    LTEXT           "Output DEM: ",IDC_OutputFileNameLbl,16,34,44,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,67,32,196,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,266,12,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,266,32,15,15
+    LTEXT           "Shave peaks with heights <",IDC_PeakHeightLbl,62,103,90,
+                    8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_PeakHeightFld,174,100,48,15,ES_AUTOHSCROLL
+    LTEXT           "Fill pits with depths <",IDC_PitDepthLbl,62,79,69,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_PitDepthFld,174,76,48,15,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    10,137,267,12
+    GROUPBOX        "Parameters",IDC_STATIC,21,64,252,61
+END
+
+IDD_KnobDlg DIALOGEX 0, 0, 228, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Knob"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,55,177,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,177,50,14
+    LTEXT           "Ridgeline File:",IDC_RidgelineFileNameLbl,10,15,45,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_InputFileNameFld,58,12,143,15,ES_AUTOHSCROLL
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,10,50,39,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,58,49,144,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,205,12,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,205,48,15,15
+    GROUPBOX        "Parameters:",IDC_KnobParaGrp,12,74,207,76
+    LTEXT           "Elevation:",IDC_ElevationLbl,35,90,33,8
+    LTEXT           "High:",IDC_EleHighLbl,42,106,18,8,0,WS_EX_RIGHT
+    LTEXT           "Low:",IDC_EleLowLbl,42,125,16,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_EleHighFld,68,106,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EleLowFld,68,125,40,12,ES_AUTOHSCROLL
+    LTEXT           "Threshold:",IDC_ThresholdLbl,121,90,35,8
+    LTEXT           "High:",IDC_ThreshHighLbl,134,106,18,8,0,WS_EX_RIGHT
+    LTEXT           "Low:",IDC_TheshLowLbl,134,125,16,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_ThreshHighFld,154,106,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ThreshLowFld,154,125,40,12,ES_AUTOHSCROLL
+    LTEXT           "DEM File:",IDC_DEMFileNameLbl,10,33,30,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_DEMFileNameFld,58,30,143,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_DEMFileNameBtn,206,30,15,15
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,11,159,
+                    204,11
+END
+
+IDD_UDADlg DIALOGEX 0, 0, 274, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Accumulation-Single Flow Direction"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,63,79,50,14
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,254,12,15,15
+    EDITTEXT        IDC_InputFileNameFld,88,13,164,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,254,39,15,15
+    EDITTEXT        IDC_OutputFileNameFld,88,40,163,15,ES_AUTOHSCROLL
+    LTEXT           "Flow Direction File: ",IDC_InputFileNameLbl,10,16,63,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File: ",IDC_OutputFileNameLbl,10,42,41,8,0,
+                    WS_EX_RIGHT
+    PUSHBUTTON      "Cancel",IDCANCEL,149,80,50,14
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,16,61,
+                    245,13,WS_EX_CLIENTEDGE
+END
+
+IDD_StretchDlg DIALOGEX 0, 0, 245, 174
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Stretch"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,67,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,141,145,50,14
+    LTEXT           "Input File:",IDC_InputFileNameLbl,9,7,34,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_InputFileNameFld,52,7,162,15,ES_AUTOHSCROLL
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,5,28,39,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,52,27,161,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,217,6,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,217,28,15,15
+    LTEXT           "Output Min:",IDC_OutputMinLbl,61,64,39,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputMinFld,102,64,42,15,ES_AUTOHSCROLL
+    LTEXT           "Output Max:",IDC_OutputMaxLbl,149,64,42,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputMaxFld,191,64,42,15,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,8,124,221,12
+    LTEXT           "Input Min:",IDC_InputMinLbl,61,87,34,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_InputMinFld,102,87,42,15,ES_AUTOHSCROLL
+    LTEXT           "Input Max:",IDC_InputMaxLbl,149,88,36,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_InputMaxFld,191,87,42,15,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_ParaGrp,7,52,231,62
+    CONTROL         "Customize",IDC_CustomizeChk,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,86,52,10
+END
+
+IDD_WetnessDlg DIALOGEX 0, 0, 283, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Wetness Index"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,64,115,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,115,50,14
+    LTEXT           "Flow Accumulation File: ",IDC_UDAFileNameLbl,15,15,77,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_UDAFileNameFld,95,12,163,15,ES_AUTOHSCROLL
+    LTEXT           "Output File: ",IDC_OutputFileNameLbl,15,55,41,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,95,55,162,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_UDAFileNameBtn,264,12,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,264,55,15,15
+    LTEXT           "Slope File: ",IDC_SlopeFileNameLbl,15,34,36,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_GradientFileNameFld,95,33,162,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_GradientFileNameBtn,264,33,15,15
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,9,87,255,14
+END
+
+IDD_SamplingDlg DIALOGEX 0, 0, 302, 256
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Sampling Design"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,76,228,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,228,50,14
+    CONTROL         "Global Random",IDC_RandomRdo,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,13,7,63,10
+    CONTROL         "Stratified",IDC_StratifiedRdo,"Button",
+                    BS_AUTORADIOBUTTON,13,38,45,10
+    CONTROL         "Systematic",IDC_SystematicRdo,"Button",
+                    BS_AUTORADIOBUTTON,13,22,51,10
+    CONTROL         "Regional Random",IDC_RegionalRandomRdo,"Button",
+                    BS_AUTORADIOBUTTON,13,52,71,10
+    EDITTEXT        IDC_VerticalRangeFld,156,155,24,14,ES_AUTOHSCROLL
+    RTEXT           "Vertical: ",IDC_VerticalRangeLbl,113,157,29,8,
+                    SS_CENTERIMAGE | NOT WS_GROUP
+    EDITTEXT        IDC_HorizontalRangeFld,240,155,30,14,ES_AUTOHSCROLL
+    RTEXT           "Horizontal: ",IDC_HorizontalRangeLbl,191,157,38,8,
+                    SS_CENTERIMAGE | NOT WS_GROUP
+    RTEXT           "Xmin: ",IDC_XminLbl,78,182,20,8
+    EDITTEXT        IDC_XminFld2,104,182,40,14,ES_AUTOHSCROLL
+    RTEXT           "Ymin: ",IDC_YminLbl,78,201,20,8
+    EDITTEXT        IDC_YminFld,104,201,40,14,ES_AUTOHSCROLL
+    RTEXT           "Xmax: ",IDC_XmaxLbl,159,182,23,8
+    EDITTEXT        IDC_XmaxFld,188,182,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_SampleGrp,11,99,268,124
+    RTEXT           "Ymax: ",IDC_YmaxLbl,159,201,23,8
+    EDITTEXT        IDC_YmaxFld,188,201,40,14,ES_AUTOHSCROLL
+    CONTROL         "Total Number of Samples: ",IDC_TotalNoChk,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,111,100,10
+    EDITTEXT        IDC_TotalNoFld,164,111,40,14,ES_AUTOHSCROLL
+    CONTROL         "Number of Samples in Sub-region: ",IDC_NoInSubChk,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,19,133,126,10
+    EDITTEXT        IDC_NoInSubFld,164,133,40,14,ES_AUTOHSCROLL
+    CONTROL         "Range of Sub-region: ",IDC_RangeChk,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,155,87,10
+    LTEXT           "Sampling Region: ",IDC_RegionLbl,19,173,58,8
+    RTEXT           "Number-of-sample File: ",IDC_NumberFileLbl,22,73,77,8,
+                    NOT WS_GROUP
+    EDITTEXT        IDC_NumberFileFld,108,73,140,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_NumberFileBtn,250,73,15,12
+    RTEXT           "Region File: ",IDC_RegionFileLbl,22,88,40,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_RegionFileFld,108,88,140,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_RegionFileBtn,250,88,15,12
+END
+
+IDD_HeadwaterDlg DIALOGEX 0, 0, 265, 270
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Headwater"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,244,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,157,244,50,14
+    LTEXT           "Ordered Stream File: ",IDC_OrderedStreamFileLbl,8,27,70,
+                    8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_StreamFileFld,91,25,145,15,ES_AUTOHSCROLL
+    LTEXT           "Output File: ",IDC_OutputFileNameLbl,8,98,41,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,91,97,145,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_StreamFileBtn,238,25,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,238,97,15,15
+    LTEXT           "Planform Curvature File: ",IDC_PlanformLbl,8,44,81,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_PlanformFileFld,91,43,144,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PlanformBtn,238,43,15,15
+    LTEXT           "Stream order:",IDC_StreamOrderLbl,16,136,46,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_StreamOrderFld,92,134,43,12,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,10,228,240,10
+    LTEXT           "Flow Direction File: ",IDC_FlowDirFileLbl,8,10,63,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_FlowDirFileFld,91,7,144,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_FlowDirBtn,238,7,15,15
+    RTEXT           "Algorithm:",IDC_AlgorithmLbl,16,152,34,8
+    LTEXT           "Profile Curvature File: ",IDC_ProfileFileLbl,8,62,73,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ProfileFileFld,91,61,145,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ProfileBtn,238,61,15,15
+    GROUPBOX        "Parameter",IDC_ParameterGrp,8,117,246,107
+    CTEXT           "* Planform",IDC_PlanformValueLbl,201,152,41,8
+    EDITTEXT        IDC_PlanforWgtFld,159,151,35,12,ES_AUTOHSCROLL
+    CTEXT           "* Profile + ",IDC_ProfileLbl,114,152,36,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_ProfileWgtFld,73,151,35,12,ES_AUTOHSCROLL
+    CONTROL         "Jump nodes",IDC_JumpNodesRdo,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,77,203,54,10
+    CONTROL         "All nodes",IDC_AllNodesRdo,"Button",BS_AUTORADIOBUTTON,
+                    146,203,52,10
+    LTEXT           "Up-search range:",IDC_UpSearchRangeLbl,16,168,57,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_UpSearchRangeFld,92,168,38,12,ES_AUTOHSCROLL
+    CTEXT           "pixels",IDC_PixelTextLbl,144,168,25,8
+    LTEXT           "Down-search range:",IDC_DownSearchRangeLbl,16,184,66,8,
+                    0,WS_EX_RIGHT
+    EDITTEXT        IDC_DownSearchRangeFld,92,184,39,12,ES_AUTOHSCROLL
+    CTEXT           "pixels",IDC_PixelTextLbl2,144,185,25,8
+    LTEXT           "Flow Accumulation File: ",IDC_UDAFileLbl,8,81,77,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_FlowAccFileFld,91,79,143,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_FlowAccFileBtn,238,79,15,15
+END
+
+IDD_FlowDirDlg DIALOGEX 0, 0, 264, 120
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Flow Direction"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,70,91,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,91,50,14
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,236,13,15,15
+    EDITTEXT        IDC_InputFileNameFld,70,14,163,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,236,34,15,15
+    EDITTEXT        IDC_OutputFileNameFld,70,35,162,15,ES_AUTOHSCROLL
+    LTEXT           "DEM File: ",IDC_InputFileNameLbl,15,14,32,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File: ",IDC_OutputFileNameLbl,15,35,41,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,18,63,230,14
+END
+
+IDD_FrequencyDlg DIALOGEX 0, 0, 267, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Data Frequency"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,66,93,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,94,50,14
+    EDITTEXT        IDC_OutputFileFld,68,32,176,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileBtn,247,32,14,14
+    LTEXT           "Output File:",IDC_OutputFileLbl,15,36,39,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_InputFileFld,68,12,175,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileBtn,246,12,14,14
+    LTEXT           "Input File:",IDC_InputFileLbl,15,15,34,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,15,64,
+                    230,14
+END
+
+IDD_FilterDlg DIALOGEX 0, 0, 244, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Filter"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,58,105,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,138,105,50,14
+    LTEXT           "Input File: ",IDC_InputLbl,11,14,36,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_InputFld,60,13,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputBtn,220,14,15,14
+    LTEXT           "Output File: ",IDC_OutputLbl,11,35,41,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFld,60,32,155,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputBtn,220,33,15,14
+    RTEXT           "Filter Size: ",IDC_FilterSizeLbl,11,55,36,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_FilterSizeFld,60,54,61,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,11,78,221,
+                    14
+END
+
+IDD_TerrainPartitionDlg DIALOGEX 0, 0, 289, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Terrain Partition"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,74,129,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,129,50,14
+    LTEXT           "Output File:",IDC_OutputLbl,9,52,39,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFld,82,51,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputBtn,263,51,15,14
+    LTEXT           "Coded Streamlines:",IDC_StreamlineFileLbl,9,12,63,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_StreamlineFileFld,82,11,173,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_StreamlineFileBtn,263,11,15,14
+    LTEXT           "Flow Direction File:",IDC_FlowDirFileLbl,9,32,61,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_FlowDirFileFld,82,30,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_FlowDirFileBtn,263,31,15,14
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,6,105,268,14
+    CONTROL         "Combine partitions with similar aspects: angle <",
+                    IDC_CombinePartitionChk,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,9,81,168,10
+    EDITTEXT        IDC_AngleFld,202,79,62,14,ES_AUTOHSCROLL
+END
+
+IDD_ShoulderDlg DIALOGEX 0, 0, 270, 272
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Shoulder Slope"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,247,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,247,50,14
+    LTEXT           "Terrain Partition File:",IDC_TerrainPartitionFileLbl,7,
+                    8,68,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_TerrainPartitionFileFld,95,7,147,15,ES_AUTOHSCROLL
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,7,99,39,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,95,98,146,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TerrainPartitionFileBtn,249,7,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,249,98,15,15
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,8,223,251,13
+    LTEXT           "Planform Curvature File:",IDC_PlanformLbl,7,26,79,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_PlanformFileFld,95,25,148,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PlanformBtn,249,25,15,15
+    LTEXT           "Profile Curvature File:",IDC_ProfileLbl,7,44,71,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ProfileFileFld,95,43,147,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ProfileBtn,249,43,15,15
+    LTEXT           "Planform weight: ",IDC_PlanformWgtLbl,16,147,57,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_PlanformWgtFld,78,145,39,14,ES_AUTOHSCROLL
+    LTEXT           "Profile weight: ",IDC_ProfileWgtLbl,16,164,49,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ProfileWgtFld,78,162,39,14,ES_AUTOHSCROLL
+    GROUPBOX        "Parameters",IDC_ParameterGrp,7,127,239,82
+    EDITTEXT        IDC_TopPercentFld,186,165,39,14,ES_AUTOHSCROLL
+    RTEXT           "Top %: ",IDC_TopPcntLbl,135,165,27,8,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT | WS_EX_RIGHT
+    EDITTEXT        IDC_MinAreaFld,187,146,39,14,ES_AUTOHSCROLL
+    RTEXT           "Minimum area: ",IDC_MinAreaLbl,135,147,49,8,NOT 
+                    WS_GROUP,WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Slope File:",IDC_SlopeLbl,7,62,34,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_SlopeFileFld,95,61,147,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SlopeFileBtn,249,61,15,15
+    LTEXT           "Slope > ",IDC_SlopeThreshLbl,16,181,28,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_SlopeThreshFld,78,179,39,14,ES_AUTOHSCROLL
+    LTEXT           "Ridgeline File:",IDC_RidgeFileLbl,7,80,45,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_RidgeFileFld,95,79,146,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_RidgeFileBtn,249,79,15,15
+END
+
+IDD_3drViewerDlg DIALOGEX 0, 0, 570, 340
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "3dr File Viewer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_RowFld,282,7,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ColFld,282,23,36,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FileHeaderFld,7,7,147,49,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_DataFld,7,60,556,273,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    LTEXT           "Row:",IDC_RowLbl,263,7,18,8,0,WS_EX_RIGHT
+    LTEXT           "Col:",IDC_ColLbl,263,23,14,8,0,WS_EX_RIGHT
+    PUSHBUTTON      "OK",IDOK,518,12,45,14,NOT WS_VISIBLE
+    EDITTEXT        IDC_PixelFld,393,7,36,12,ES_AUTOHSCROLL
+    LTEXT           "Pixel:",IDC_PixelLbl,341,8,18,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_XFld,174,7,76,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_YFld,174,23,76,12,ES_AUTOHSCROLL
+    LTEXT           "x:",IDC_XLbl,163,7,9,8,0,WS_EX_RIGHT
+    LTEXT           "y:",IDC_YLbl,162,23,9,8,NOT WS_GROUP,WS_EX_RIGHT
+    PUSHBUTTON      "...",IDC_InputFileBtn,418,42,15,14
+    EDITTEXT        IDC_InputFileFld,166,42,250,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "D",IDC_DownBtn,460,42,15,14
+    PUSHBUTTON      "R",IDC_RightBtn,475,42,15,14
+    PUSHBUTTON      "L",IDC_LeftBtn,445,42,15,14
+    PUSHBUTTON      "U",IDC_UpBtn,460,28,15,14
+    EDITTEXT        IDC_DecimalDigitsFld,394,23,36,12,ES_AUTOHSCROLL
+    LTEXT           "Decimal Digits:",IDC_DecimalDigitsLbl,341,24,47,8,0,
+                    WS_EX_RIGHT
+END
+
+IDD_ColorDlg DIALOGEX 0, 0, 247, 115
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Color"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,93,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,93,50,14
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,217,11,16,15
+    EDITTEXT        IDC_InputFileNameFld,50,11,165,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,217,51,16,15
+    EDITTEXT        IDC_OutputFileNameFld,52,51,163,15,ES_AUTOHSCROLL
+    LTEXT           "Input File:",IDC_InputFileNameLbl,7,13,34,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,7,52,39,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    PUSHBUTTON      "...",IDC_ColorFileNameBtn,217,31,16,15
+    EDITTEXT        IDC_ColorFileNameFld,50,31,166,15,ES_AUTOHSCROLL
+    LTEXT           "Color File:",IDC_ColorFileNameLbl,7,31,33,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,7,74,
+                    226,11
+END
+
+IDD_PrunBranchDlg DIALOGEX 0, 0, 275, 159
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Prune branches"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,136,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,160,136,50,14
+    LTEXT           "Network File: ",IDC_InputLbl,17,15,57,8,0,WS_EX_RIGHT
+    EDITTEXT        IDC_InputFld,75,12,167,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputBtn,246,12,15,14
+    LTEXT           "Output File: ",IDC_OutputLbl,15,52,53,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFld,75,50,167,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputBtn,246,50,15,14
+    LTEXT           "Minimum length: ",IDC_MinLengthLbl,57,72,65,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_MinLengthFld,135,70,28,14,ES_AUTOHSCROLL
+    LTEXT           "(number of pixels)",IDC_NumPixelLbl,167,72,80,14
+    LTEXT           "Flow Direction File: ",IDC_FlowDirLbl,3,34,85,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_FlowDirFld,87,31,156,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_FlowDirBtn,245,31,15,14
+    LTEXT           "Background Value: ",IDC_BckgrdVLbl,55,92,73,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_BackgroundVFld,135,92,28,14,ES_AUTOHSCROLL
+END
+
+IDD_BackDlg DIALOGEX 0, 0, 263, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Back Slope"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,63,167,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,144,167,50,14
+    LTEXT           "Terrain Partition File:",IDC_TerrainPartitionFileLbl,6,
+                    15,68,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_TerrainPartitionFileFld,73,12,165,15,ES_AUTOHSCROLL
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,6,76,39,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFileNameFld,73,74,166,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_TerrainPartitionFileBtn,240,12,15,15
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,240,75,15,15
+    GROUPBOX        "Parameters",IDC_ParameterGrp,12,96,239,43
+    EDITTEXT        IDC_TopPercentFld,109,111,66,14,ES_AUTOHSCROLL
+    RTEXT           "Top %: ",IDC_TopPcntLbl,65,111,27,8,NOT WS_GROUP,
+                    WS_EX_TRANSPARENT | WS_EX_RIGHT
+    LTEXT           "Slope File:",IDC_SlopeLbl,6,35,34,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_SlopeFileFld,73,34,166,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SlopeFileBtn,240,34,15,15
+    LTEXT           "Ridgeline File:",IDC_RidgeFileLbl,6,56,45,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_RidgeFileFld,73,53,165,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_RidgeFileBtn,240,52,15,15
+    CONTROL         "Progress1",IDC_ProgressBar,"msctls_progress32",
+                    WS_BORDER,6,148,246,11
+END
+
+IDD_CatchmentDlg DIALOGEX 0, 0, 252, 105
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Catchment"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,56,81,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,134,81,50,14
+    LTEXT           "Flow Direction File: ",IDC_InputLbl,8,13,63,8,0,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_InputFld,77,10,153,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputBtn,232,10,15,14
+    LTEXT           "Output File: ",IDC_OutputLbl,8,35,41,8,NOT WS_GROUP | 
+                    WS_TABSTOP,WS_EX_RIGHT
+    EDITTEXT        IDC_OutputFld,77,33,153,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputBtn,232,33,15,14
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,8,58,
+                    232,12
+END
+
+IDD_DerivativeAttrDlg DIALOGEX 0, 0, 249, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Surface Derivative"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,57,137,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,139,138,50,14
+    RTEXT           "Terrain Attributes: ",IDC_TerrainAttrLbl,28,67,62,8
+    COMBOBOX        IDC_TerrainAttrCmb,97,67,118,146,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Algorithm: ",IDC_AlgoLbl,28,88,36,8
+    COMBOBOX        IDC_AlgoCmb,97,88,118,146,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    RTEXT           "Neighborhood size: ",IDC_NeighborSizeLbl,28,109,64,8
+    EDITTEXT        IDC_NeighborSizeFld,97,108,47,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_ParaGrp,14,52,220,81
+    EDITTEXT        IDC_InputFileFld,45,12,173,14,ES_AUTOHSCROLL
+    RTEXT           "DEM File:",IDC_InputFileLbl,8,14,29,8
+    PUSHBUTTON      "...",IDC_InputFileBtn,221,12,16,14
+    EDITTEXT        IDC_OutputFileFld,45,34,173,14,ES_AUTOHSCROLL
+    RTEXT           "Output File:",IDC_OutputFileLbl,4,35,39,8
+    PUSHBUTTON      "...",IDC_OutputFileBtn,222,34,16,14
+END
+
+IDD_3drTo3dmDlg DIALOGEX 0, 0, 294, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "3dr to 3dm"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,81,111,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,111,50,14
+    EDITTEXT        IDC_InputFileFld,62,7,195,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileBtn,259,7,18,14
+    EDITTEXT        IDC_OutputFileFld,62,32,195,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileBtn,259,32,18,14
+    LTEXT           "Input File: ",IDC_InputFileLbl,16,10,36,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    LTEXT           "Output File: ",IDC_OutputFileLbl,16,33,41,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,16,85,
+                    258,12
+    LTEXT           "Data Unit: ",IDC_DataUnitLbl,16,60,36,8
+    COMBOBOX        IDC_DataUnitCmb,62,58,73,36,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grid Unit: ",IDC_GridUnitLbl,147,60,45,8
+    COMBOBOX        IDC_GridUnitCmb,197,58,73,37,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FuzzyAspectDlg DIALOGEX 0, 0, 289, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Fuzzy Aspect"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,78,141,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,159,141,50,14
+    PUSHBUTTON      "...",IDC_InputFileNameBtn,256,7,17,15
+    EDITTEXT        IDC_InputFileNameFld,58,7,196,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileNameBtn,256,28,17,15
+    EDITTEXT        IDC_OutputFileNameFld,58,28,196,15,ES_AUTOHSCROLL
+    LTEXT           "Aspect File:",IDC_InputFileNameLbl,13,9,38,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output File:",IDC_OutputFileNameLbl,13,28,39,8,0,
+                    WS_EX_RIGHT
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,13,122,
+                    260,11
+    GROUPBOX        "",IDC_ParameterGrp,13,46,257,64
+    LTEXT           "Lower limit for 0:",IDC_LowerFor0Lbl,31,62,54,8
+    EDITTEXT        IDC_LowerLimitFor0Fld,90,62,40,14,ES_AUTOHSCROLL
+    LTEXT           "Upper limit for 0:",IDC_UpperFor0Lbl,31,82,54,8
+    EDITTEXT        IDC_UpperLimitFor0Fld,90,82,40,14,ES_AUTOHSCROLL
+    LTEXT           "Lower limit for 1:",IDC_LowerFor1Lbl,157,62,58,8
+    EDITTEXT        IDC_LowerLimitFor1Fld,217,62,40,14,ES_AUTOHSCROLL
+    LTEXT           "Upper limit for 1:",IDC_UpperFor1Lbl,157,82,57,8
+    EDITTEXT        IDC_UpperLimitFor1Fld,217,82,40,14,ES_AUTOHSCROLL
+END
+
+IDD_RANGE_WIZARD DIALOGEX 0, 0, 188, 137
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Range Rule"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Finish",IDC_FINISH,146,110,32,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,7,111,36,14
+    PUSHBUTTON      "Previous",IDC_PREV,53,111,34,14
+    PUSHBUTTON      "Next",IDC_NEXT,97,111,37,14
+    GROUPBOX        "",IDC_POS,7,7,172,97
+END
+
+IDD_WIZARD_CURVETYPE DIALOGEX 0, 0, 159, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_CURVE_TYPE,39,48,95,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Curve Type:",IDC_STATIC_CURVE_TYPE,26,15,41,8
+END
+
+IDD_WIZARD_POINT_WIDTH DIALOGEX 0, 0, 153, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Left Width:",IDC_STATIC_LOW_CROSS,18,7,37,8
+    LTEXT           "Right Width:",IDC_STATIC_HIGH_CROSS,17,44,41,8
+    EDITTEXT        IDC_EDIT_LEFT_WIDTH,34,23,96,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RIGHT_WIDTH,34,59,98,14,ES_AUTOHSCROLL
+END
+
+IDD_WIZARD_MINMAX DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "The min of the graph:",IDC_STATIC_MIN,23,9,98,8
+    LTEXT           "The max of the graph:",IDC_STATIC_MAX,22,45,120,8
+    EDITTEXT        IDC_EDIT_MIN,54,24,97,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_MAX,54,60,100,14,ES_AUTOHSCROLL
+END
+
+IDD_ENUM_WIZARD DIALOGEX 0, 0, 180, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Enumerated Rule"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Finish",IDC_FINISH,135,125,31,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,7,125,33,14
+    PUSHBUTTON      "Previous",IDC_PREV,46,125,36,14
+    PUSHBUTTON      "Next",IDC_NEXT,89,125,38,14
+    GROUPBOX        "",IDC_POS,7,7,166,110
+END
+
+IDD_FREEHAND_WIZARD DIALOGEX 0, 0, 188, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Freehand Rule"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Finish",IDC_FINISH,137,125,36,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,7,125,35,14
+    PUSHBUTTON      "Previous",IDC_PREV,51,125,39,14
+    PUSHBUTTON      "Next",IDC_NEXT,95,125,38,14
+    GROUPBOX        "",IDC_POS,7,7,174,110
+END
+
+IDD_WORD_WIZARD DIALOGEX 0, 0, 186, 150
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Word Rule"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Finish",IDC_FINISH,127,125,41,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,7,125,31,14
+    PUSHBUTTON      "Previous",IDC_PREV,46,125,33,14
+    PUSHBUTTON      "Next",IDC_NEXT,86,125,33,14
+    GROUPBOX        "",IDC_POS,7,7,172,110
+END
+
+IDD_WIZARD_WORD_LIB DIALOGEX 0, 0, 183, 102
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_LIBFILENAME,32,26,108,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE_LIBFILE,147,26,19,14
+    LTEXT           "Word Library Name:",IDC_STATIC_LIBNAME,12,10,65,8
+    COMBOBOX        IDC_COMBO_CURVENAME,32,72,109,63,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TERRAIN_ATTRI,32,49,109,55,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_POINT_WIZARD DIALOGEX 0, 0, 187, 151
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "New Point Rule"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Finish",IDC_FINISH,137,125,34,14
+    PUSHBUTTON      "Cancel",IDC_CANCEL,7,125,34,14
+    PUSHBUTTON      "Previous",IDC_PREV,49,125,36,14
+    PUSHBUTTON      "Next",IDC_NEXT,94,125,34,14
+    GROUPBOX        "",IDC_POS,7,7,173,110
+END
+
+IDD_GdalTo3drDlg DIALOGEX 0, 0, 299, 135
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "GDAL-Supported Raster Formats to 3dr"
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,169,113,50,14
+    EDITTEXT        IDC_InputFileFld,62,11,195,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileBtn,259,11,18,14
+    EDITTEXT        IDC_OutputFileFld,62,36,195,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileBtn,259,36,18,14
+    LTEXT           "Input File: ",IDC_InputFileLbl,16,12,36,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    LTEXT           "Output File: ",IDC_OutputFileLbl,16,36,41,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,16,87,
+                    263,14
+    RTEXT           "Data Unit: ",IDC_DataUnitLbl,16,60,36,8
+    COMBOBOX        IDC_DataUnitCmb,62,60,73,36,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grid Unit: ",IDC_GridUnitLbl,162,60,34,8
+    COMBOBOX        IDC_GridUnitCmb,196,60,73,37,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_GdalTo3dmDlg DIALOGEX 0, 0, 295, 126
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "GDAL-Supported Raster Formats to 3dm"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,65,104,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,170,104,50,14
+    EDITTEXT        IDC_InputFileFld,62,7,195,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_InputFileBtn,259,7,16,14
+    EDITTEXT        IDC_OutputFileFld,62,34,195,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_OutputFileBtn,259,34,16,14
+    LTEXT           "Input File: ",IDC_InputFileLbl,17,9,36,8,NOT WS_GROUP,
+                    WS_EX_RIGHT
+    LTEXT           "Output File: ",IDC_OutputFileLbl,17,36,41,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "",IDC_ProgressBar,"msctls_progress32",WS_BORDER,17,86,
+                    260,11
+    RTEXT           "Data Unit: ",IDC_DataUnitLbl,17,62,36,8
+    COMBOBOX        IDC_DataUnitCmb,62,60,73,36,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Grid Unit: ",IDC_GridUnitLbl,162,62,34,8
+    COMBOBOX        IDC_GridUnitCmb,196,60,73,37,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ConvertSIEDlg DIALOGEX 0, 0, 318, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Convert from SIE"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,61,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,173,155,50,14
+    LTEXT           "Environmental Data Layer List File:",IDC_STATIC,98,15,
+                    112,8
+    LTEXT           "Knowledge Base File:",IDC_STATIC,103,49,68,8
+    EDITTEXT        IDC_SIEListFileFld,100,28,180,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SIEKnowledgeFileFld,101,62,178,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NewPrjNameFld,100,109,185,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NewPrjDirFld,100,128,185,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_NewDirBtn,288,127,13,14
+    GROUPBOX        "Old Version Project",IDC_STATIC,7,7,297,80
+    GROUPBOX        "New Version Project",IDC_STATIC,7,93,297,54
+    LTEXT           "New Project Name:",IDC_STATIC,20,110,62,8
+    LTEXT           "New Project Directory:",IDC_STATIC,20,129,74,8
+    PUSHBUTTON      "...",IDC_ListFileBtn,285,28,13,14
+    PUSHBUTTON      "...",IDC_KnowledgeFileBtn,285,63,13,14
+    LTEXT           "SIE Knowledge Type:",IDC_STATIC,15,24,69,8
+    CONTROL         "Attribute Rule",IDC_RADIO_ATTRIBUTE,"Button",
+                    BS_AUTORADIOBUTTON,25,38,61,10
+    CONTROL         "Point Case",IDC_RADIO_POINT,"Button",BS_AUTORADIOBUTTON,
+                    25,57,50,10
+END
+
+IDD_ErrorMatrixPntLabMapDlg DIALOGEX 0, 0, 300, 284
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Pnt/Lab vs. Map"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDErrorMatrixOK,62,261,50,14
+    PUSHBUTTON      "Cancel",IDErrorMatrixCancel,180,261,50,14
+    EDITTEXT        IDC_ErrorMatrixPntFileFld,99,33,173,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ErrorMatrixPntFileBtn,273,33,14,14
+    LTEXT           "Point File:",IDC_ErrorMatrixPntFileLbl,7,34,32,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Progress1",IDC_ErrorMatrixProBar,"msctls_progress32",
+                    WS_BORDER,8,232,274,14
+    EDITTEXT        IDC_ErrorMatrixHardenedMapFld,99,74,172,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ErrorMatrixHardenedMapBtn,274,74,14,14
+    EDITTEXT        IDC_ErrorMatrixMatrixFld,99,104,173,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "...",IDC_ErrorMatrixMatrixBtn,275,104,14,14
+    LTEXT           "Hardened Map File:",IDC_ErrorMatrixHardenedMapLbl,4,75,
+                    63,8,NOT WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Output Error Matrix File:",IDC_ErrorMatrixMatrixLbl,4,
+                    107,79,8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_AccuracyReportFld,99,124,174,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Output Accuracy Report File:",IDC_AccuracyReportLbl,4,
+                    126,94,8,NOT WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Neighborhood Size:",IDC_ErrorMatrixNeighborLbl,4,163,63,
+                    8,NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ErrorMatrixNeighborFld,99,161,90,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ErrorMatrixLabFileFld,99,15,173,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ErrorMatrixLblFileBtn,273,15,14,14
+    LTEXT           "Label File:",IDC_ErrorMatrixLblFileLbl,7,17,33,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    GROUPBOX        "",IDC_STATIC,4,6,289,44
+    LTEXT           "Output Mismatch List File:",IDC_STATIC,4,144,83,8
+    EDITTEXT        IDC_MismatchListFld,99,142,173,16,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Look-up Table File:",IDC_STATIC,5,56,61,8
+    EDITTEXT        IDC_LookupTableFld,99,54,172,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_LookupTableBtn,274,53,14,14
+    LTEXT           "(should be an odd number)",IDC_STATIC,194,165,86,12
+    PUSHBUTTON      "...",IDC_MaskFileBtn,273,185,14,12,WS_DISABLED
+    CONTROL         "Mask",IDC_MaskChk,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    5,185,32,10
+    LTEXT           "Masking Value: ",IDC_MaskValueLbl,97,204,50,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_MaskValueFld,149,202,32,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "(pixel with this value will NOT be processed)",
+                    IDC_STATIC_MASK_VALUE_INSTRUCTION,197,201,82,24
+    EDITTEXT        IDC_MaskFileFld,99,185,170,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+END
+
+IDD_ValidationPointPropertyMapDlg DIALOGEX 0, 0, 296, 223
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Point List vs.Property Map"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,198,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,173,199,50,14
+    LTEXT           "Observed Point List File:",IDC_ObservedLbl,3,20,78,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    CONTROL         "Progress1",IDC_ValidationProBar,"msctls_progress32",
+                    WS_BORDER,7,175,274,14
+    EDITTEXT        IDC_PropertyMapFld,100,37,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AccuracyReportFld,100,73,174,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_AccuracyReportBtn,277,72,14,14
+    LTEXT           "Output Accuracy Report File:",IDC_AccuracyReportLbl,2,
+                    75,94,8,NOT WS_GROUP,WS_EX_RIGHT
+    LTEXT           "Neighborhood Size:",IDC_ValidationNeighborLbl,2,99,63,8,
+                    NOT WS_GROUP,WS_EX_RIGHT
+    EDITTEXT        IDC_ValidationNeighborFld,100,97,90,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_ObservedBtn,277,18,14,14
+    EDITTEXT        IDC_ObservedFld,100,17,174,14,ES_AUTOHSCROLL
+    LTEXT           "Property Map File:",IDC_PropertyMapLbl,3,39,60,8,NOT 
+                    WS_GROUP,WS_EX_RIGHT
+    PUSHBUTTON      "...",IDC_PropertyMapBtn,277,38,14,14
+    LTEXT           "(should be an odd number)",IDC_STATIC,197,103,87,8
+    PUSHBUTTON      "...",IDC_MaskFileBtn,277,130,14,12,WS_DISABLED
+    CONTROL         "Mask",IDC_MaskChk,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    5,130,32,10
+    EDITTEXT        IDC_MaskFileFld,97,130,176,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "Masking Value: ",IDC_MaskValueLbl,96,149,50,8,
+                    WS_DISABLED
+    EDITTEXT        IDC_MaskValueFld,149,147,32,12,ES_AUTOHSCROLL | 
+                    WS_DISABLED
+    LTEXT           "(pixel with this value will NOT be processed)",
+                    IDC_STATIC_MASK_VALUE_INSTRUCTION,196,145,82,24
+END
+
+IDD_DIALOG_CLUSTER_NUMBER DIALOGEX 0, 0, 186, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Cluster Number Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,54,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,54,50,14
+    EDITTEXT        IDC_EDIT_CLUSTER_NUM,35,26,115,14,ES_AUTOHSCROLL
+    LTEXT           "Please input the cluster number:",IDC_STATIC,15,7,137,
+                    14
+END
+
+IDD_CBR_GEN_FILE DIALOGEX 0, 0, 367, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Environment Characterization"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",IDOK,214,188,56,14
+    PUSHBUTTON      "Cancel",IDCANCEL,279,188,56,14
+    LTEXT           "Mapping grid size",IDC_STATIC,13,18,68,13
+    COMBOBOX        IDC_COMBO_GRIDSIZE,98,16,237,70,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Topographic variables  characterization",IDC_STATIC,13,
+                    99,145,40
+    CONTROL         "",IDC_PROGRESS_GENERATE,"msctls_progress32",WS_BORDER,
+                    11,163,322,15
+    LTEXT           "Process",IDC_STATIC_STATUS,13,145,319,11
+    LTEXT           " For climate and geology variables not varying rapidly over the area of grid, we used single value to represent the character of each variable on a grid.",
+                    IDC_STATIC,13,39,320,19
+    CONTROL         "Use single value",IDC_RADIO_SINGLE_VALUE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,21,109,85,10
+    CONTROL         "Use PDF estimated by KDE",IDC_RADIO_KDE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,21,123,112,10
+    LTEXT           "For topographic and vegetation variables varying rapidly over the area of grid, we have two choices: the probability distribution function (PDF) and single value.",
+                    IDC_STATIC,15,58,322,19
+    GROUPBOX        "Vegetation variables  characterization",IDC_STATIC,189,
+                    99,145,40
+    CONTROL         "Use single value",IDC_RADIO_SINGLE_VALUE_VEGETATION,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,197,
+                    109,85,10
+    CONTROL         "Use PDF estimated by KDE",IDC_RADIO_KDE_VEGETATION,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,197,123,112,10
+    LTEXT           "In the ""Use PDF estimated by KDE"" method, gaussian kernel and ""Rule of Thumb"" bandwidth calculation methods are used.",
+                    IDC_STATIC,14,78,321,17
+    DEFPUSHBUTTON   "Back",ID_BACK,149,188,56,14
+END
+
+IDD_CBR_SAMPLE DIALOGEX 0, 0, 558, 385
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Sample Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,296,349,53,14
+    CONTROL         "",IDC_LIST_Sample,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,15,7,535,165
+    PUSHBUTTON      "Import",IDC_BUTTON_GET_SAMPLE,411,186,53,14
+    PUSHBUTTON      "Clear",IDC_BUTTON_CLEAR_SAPMLE_LIST,486,186,53,14
+    PUSHBUTTON      "Next",IDOK,219,349,53,14
+    LTEXT           "X Coordinate",IDC_STATIC,18,208,53,11
+    LTEXT           "Y Coordinate",IDC_STATIC,180,208,45,11
+    COMBOBOX        IDC_COMBO_FIELD_Y,229,206,82,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_FIELD_X,65,207,82,54,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_ALL_FIELD,12,262,107,63,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_SEL_FIELD,147,266,127,61,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">>",IDC_BUTTON_ADD_FIELD,127,273,15,15
+    PUSHBUTTON      "<<",IDC_BUTTON_ADD_FIELD2,127,299,15,15
+    LTEXT           "Select the properties to calculate:",IDC_STATIC,23,246,
+                    158,13
+    PUSHBUTTON      "Back",ID_BACK,126,351,53,14
+    LISTBOX         IDC_LIST_ALL_TYPE,289,268,112,61,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">>",IDC_BUTTON_ADD_TYPE,403,276,19,17
+    PUSHBUTTON      "<<",IDC_BUTTON_ADD_TYPE2,402,304,19,16
+    LISTBOX         IDC_LIST_SEL_TYPE,425,263,125,64,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select species to calculate:",IDC_STATIC,293,257,126,11
+    LTEXT           "Species Field",IDC_STATIC,294,246,77,11
+    GROUPBOX        "",IDC_STATIC,7,226,270,108
+    GROUPBOX        "",IDC_STATIC,283,225,267,110
+    COMBOBOX        IDC_COMBO_TYPE_FIELD,375,243,82,52,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Property Inference",IDC_RADIO_INFER_PROPERTY,"Button",
+                    BS_AUTORADIOBUTTON,15,234,85,10
+    CONTROL         "Type Inference",IDC_RADIO_INFER_TYPE,"Button",
+                    BS_AUTORADIOBUTTON,288,233,85,10
+END
+
+IDD_CBR_SEL_DATA DIALOGEX 0, 0, 323, 335
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Select Data"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Next",IDOK,180,303,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,250,303,50,14
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_CLIMATE,22,29,14,14
+    CONTROL         "",IDC_LIST_CLIMATE,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,41,24,256,50
+    PUSHBUTTON      "-",IDC_BUTTON_REMOVE_CLIMATE,22,45,14,14
+    CONTROL         "",IDC_LIST_PARENTMATERIAL,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,42,96,255,50
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_PARENTMATERIAL,22,97,14,14
+    PUSHBUTTON      "-",IDC_BUTTON_REMOVE_PARENTMARERIAL,22,113,14,14
+    GROUPBOX        "Climate Layers",1108,14,15,290,66
+    GROUPBOX        "Parent Material Layers",IDC_STATIC_PARENTMATERIAL,15,85,
+                    289,72
+    GROUPBOX        "Topographic Layers",IDC_STATIC_TOPOGRAPHIC,15,163,290,
+                    65
+    CONTROL         "",IDC_LIST_TOPOGRAPHIC,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,41,173,256,50
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_TOPOGRAPHIC,22,177,14,14
+    PUSHBUTTON      "-",IDC_BUTTON_REMOVE_TOPOGRAPHIC,22,194,14,14
+    GROUPBOX        "Vegetation Layers",IDC_STATIC_TOPOGRAPHIC2,15,234,290,
+                    65
+    CONTROL         "",IDC_LIST_VEGETATION,"SysListView32",LVS_REPORT | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,41,244,256,50
+    PUSHBUTTON      "+",IDC_BUTTON_ADD_VEGETATION,21,248,14,14
+    PUSHBUTTON      "-",IDC_BUTTON_REMOVE_VEGETATION,21,264,14,14
+END
+
+IDD_CBR_UNCERTAIN DIALOGEX 0, 0, 295, 271
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Uncertainty and Predict Values"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_Uncertaintyfilename,20,80,232,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SaveUncertainty,256,80,17,14
+    GROUPBOX        "Uncertainty",IDC_STATIC,10,8,268,95
+    LTEXT           "Save Uncertainty to file",IDC_STATIC,20,60,93,16
+    GROUPBOX        "Predict Values",IDC_STATIC,11,108,266,125
+    LTEXT           "Uncertainty Threshold",IDC_STATIC,20,179,72,8
+    EDITTEXT        IDC_EDIT_Threshold,111,177,162,14,ES_AUTOHSCROLL
+    LTEXT           "Save the predicted soil property maps to folder",
+                    IDC_STATIC,20,197,228,16
+    EDITTEXT        IDC_EDIT_Valuesfoldername,20,213,229,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_SaveValues,254,213,17,14
+    PUSHBUTTON      "OK",IDOK,148,239,52,16
+    CONTROL         205,IDC_STATIC,"Static",SS_BITMAP,19,23,175,23
+    CONTROL         206,IDC_STATIC,"Static",SS_BITMAP,20,121,215,38
+    PUSHBUTTON      "Cancel",IDCANCEL,218,239,53,16
+    PUSHBUTTON      "Back",ID_BACK,78,239,52,16
+END
+
+IDD_CBR_SIMILAR DIALOGEX 0, 0, 315, 314
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Similarity Calculation"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Climate Similarity Cut:",1100,20,153,72,8
+    LTEXT           "Climate Weight:",IDC_STATIC,20,175,60,8
+    LTEXT           "Topology Weight:",IDC_STATIC,20,199,58,14
+    PUSHBUTTON      "Next",IDOK,176,286,50,14
+    EDITTEXT        IDC_EDIT_CLIMATE_CUT,96,151,191,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_CLIMATE_WEIGHT,96,173,191,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TOPOLOGY_WEIGHT,96,196,191,13,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,19,264,
+                    279,15
+    LTEXT           "Process:",IDC_STATIC,20,247,58,14
+    LTEXT           "Climate",IDC_STATIC,20,26,65,13
+    LTEXT           "Parent Material",IDC_STATIC,20,46,65,13
+    LTEXT           "Topology",IDC_STATIC,20,67,65,13
+    GROUPBOX        "Variable Level Method",IDC_STATIC,13,9,283,95
+    COMBOBOX        IDC_COMBO_Climate,96,24,191,47,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_CASE,96,123,191,48,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_TOPOLOGY,96,65,191,42,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Case Level Method",IDC_STATIC,14,110,284,132
+    LTEXT           "Method",IDC_STATIC,20,125,57,13
+    COMBOBOX        IDC_COMBO_PM2,96,44,191,44,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Rule Parameters",IDC_STATIC,17,140,275,94
+    PUSHBUTTON      "Cancel",IDCANCEL,248,286,50,14
+    LTEXT           "Vegetation",IDC_STATIC,19,86,65,13
+    COMBOBOX        IDC_COMBO_VEGETATION,95,84,191,42,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Vegetation Weight:",IDC_STATIC,19,217,63,14
+    EDITTEXT        IDC_EDIT_VEGETAION_WEIGHT,95,216,191,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Back",ID_BACK,104,286,50,14
+END
+
+IDD_CBR_TYPE_INFER DIALOGEX 0, 0, 302, 191
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Type Inference"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MAXIMUM_SIMI,20,80,232,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_Save_SIM,256,80,17,14
+    LTEXT           "Save maximum similarity to file",-1,20,62,122,16
+    LTEXT           "Save times that similarity is greater than threshold to file:",
+                    IDC_STATIC_ADD_DELETE,19,112,190,8
+    EDITTEXT        IDC_EDIT_TIMES_FILENAME,18,129,230,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,112,156,52,16
+    PUSHBUTTON      "Cancel",IDCANCEL,190,156,53,16
+    PUSHBUTTON      "Back",ID_BACK,35,155,52,16
+    LTEXT           "Similarity Threshold",-1,18,23,66,8
+    PUSHBUTTON      "...",IDC_BUTTON_SAVE_TIMES,255,129,17,14
+    EDITTEXT        IDC_EDIT_Threshold,112,23,83,14,ES_AUTOHSCROLL
+END
+
+IDD_WIZARD_CHOOSE_LAYER DIALOGEX 0, 0, 151, 90
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "??",IDC_CHECK_ATTACH_LAYER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,85,18,23,10
+    COMBOBOX        IDC_COMBO_LAYER,87,50,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_FCM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 372
+    END
+
+    IDD_DIALOG_PURPOSIVE_SAMPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 188
+    END
+
+    IDD_KNOWLEDGE_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 348
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_DIALOG_PROJECT_SUMMARY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 320
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DIALOG_SPATIAL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 240
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_DIALOG_RENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_WIZARD_RULE_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_DIALOG_ENUM_ITEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_WIZARD_POINT_CENTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_WIZARD_RANGE_KEY_POINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_ConvertTacitProjectDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_ConvertOldProjectDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 280
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_INFERENCE_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 271
+    END
+
+    IDD_MFDDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_3drToAsciiDlg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 116
+    END
+
+    IDD_ErrorMatrixPointListMapDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 294
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_ErrorMatrixPointToPointDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 298
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_BrdNrwRidgeDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 332
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_HardenMapDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 385
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_OverlayDlg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_FillShaveDEMDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+    END
+
+    IDD_UDADlg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_SamplingDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 288
+        BOTTOMMARGIN, 235
+    END
+
+    IDD_HeadwaterDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 254
+    END
+
+    IDD_ShoulderDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 244
+        BOTTOMMARGIN, 268
+    END
+
+    IDD_BackDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 260
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_DerivativeAttrDlg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_3drTo3dmDlg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 134
+    END
+
+    IDD_RANGE_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_WIZARD_CURVETYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_WIZARD_POINT_WIDTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 146
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_WIZARD_MINMAX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_ENUM_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_FREEHAND_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_WORD_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_WIZARD_WORD_LIB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 94
+    END
+
+    IDD_POINT_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_ConvertSIEDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_ErrorMatrixPntLabMapDlg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 296
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_ValidationPointPropertyMapDlg, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_DIALOG_CLUSTER_NUMBER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_CBR_GEN_FILE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_CBR_SAMPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 557
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 377
+    END
+
+    IDD_CBR_SEL_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 316
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 328
+    END
+
+    IDD_CBR_UNCERTAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_CBR_SIMILAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 307
+    END
+
+    IDD_CBR_TYPE_INFER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_WIZARD_CHOOSE_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 144
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_RANGE DLGINIT
+BEGIN
+    IDC_COMBO_CURVE_TYPE, 0x403, 11, 0
+0x6542, 0x6c6c, 0x732d, 0x6168, 0x6570, "\000" 
+    IDC_COMBO_CURVE_TYPE, 0x403, 8, 0
+0x2d53, 0x6873, 0x7061, 0x0065, 
+    IDC_COMBO_CURVE_TYPE, 0x403, 8, 0
+0x2d5a, 0x6873, 0x7061, 0x0065, 
+    0
+END
+
+IDD_DIALOG_POINT DLGINIT
+BEGIN
+    IDC_COMBO_CURVE_TYPE, 0x403, 11, 0
+0x6542, 0x6c6c, 0x732d, 0x6168, 0x6570, "\000" 
+    IDC_COMBO_CURVE_TYPE, 0x403, 8, 0
+0x2d53, 0x6873, 0x7061, 0x0065, 
+    IDC_COMBO_CURVE_TYPE, 0x403, 8, 0
+0x2d5a, 0x6873, 0x7061, 0x0065, 
+    0
+END
+
+IDD_OverlayDlg DLGINIT
+BEGIN
+    IDC_AlgCmb, 0x403, 4, 0
+0x614d, 0x0078, 
+    IDC_AlgCmb, 0x403, 4, 0
+0x694d, 0x006e, 
+    IDC_AlgCmb, 0x403, 11, 0
+0x7553, 0x7070, 0x656c, 0x656d, 0x746e, "\000" 
+    IDC_AlgCmb, 0x403, 7, 0
+0x6553, 0x656c, 0x7463, "\000" 
+    IDC_AlgCmb, 0x403, 2, 0
+0x002b, 
+    IDC_AlgCmb, 0x403, 2, 0
+0x002d, 
+    IDC_AlgCmb, 0x403, 2, 0
+0x002a, 
+    IDC_AlgCmb, 0x403, 2, 0
+0x002f, 
+    0
+END
+
+IDD_DerivativeAttrDlg DLGINIT
+BEGIN
+    IDC_TerrainAttrCmb, 0x403, 6, 0
+0x6c53, 0x706f, 0x0065, 
+    IDC_TerrainAttrCmb, 0x403, 7, 0
+0x7341, 0x6570, 0x7463, "\000" 
+    IDC_TerrainAttrCmb, 0x403, 18, 0
+0x7250, 0x666f, 0x6c69, 0x2065, 0x7563, 0x7672, 0x7461, 0x7275, 0x0065, 
+
+    IDC_TerrainAttrCmb, 0x403, 19, 0
+0x6c50, 0x6e61, 0x6f66, 0x6d72, 0x6320, 0x7275, 0x6176, 0x7574, 0x6572, 
+"\000" 
+    IDC_AlgoCmb, 0x403, 12, 0
+0x7645, 0x6e61, 0x2d73, 0x6f59, 0x6e75, 0x0067, 
+    IDC_AlgoCmb, 0x403, 5, 0
+0x6f48, 0x6e72, "\000" 
+    IDC_AlgoCmb, 0x403, 19, 0
+0x655a, 0x6576, 0x626e, 0x7265, 0x6567, 0x2d6e, 0x6854, 0x726f, 0x656e, 
+"\000" 
+    0
+END
+
+IDD_3drTo3dmDlg DLGINIT
+BEGIN
+    IDC_DataUnitCmb, 0x403, 7, 0
+0x654d, 0x6574, 0x7372, "\000" 
+    IDC_DataUnitCmb, 0x403, 5, 0
+0x6546, 0x7465, "\000" 
+    IDC_GridUnitCmb, 0x403, 7, 0
+0x654d, 0x6574, 0x7372, "\000" 
+    IDC_GridUnitCmb, 0x403, 5, 0
+0x6546, 0x7465, "\000" 
+    0
+END
+
+IDD_StreamDlg DLGINIT
+BEGIN
+    IDC_CodingAlgCmb, 0x403, 12, 0
+0x6953, 0x706d, 0x656c, 0x6d20, 0x7261, 0x006b, 
+    IDC_CodingAlgCmb, 0x403, 15, 0
+0x6f48, 0x7472, 0x6e6f, 0x7327, 0x6f20, 0x6472, 0x7265, "\000" 
+    IDC_CodingAlgCmb, 0x403, 17, 0
+0x7453, 0x6172, 0x6c68, 0x7265, 0x7327, 0x6f20, 0x6472, 0x7265, "\000" 
+    IDC_CodingAlgCmb, 0x403, 12, 0
+0x6853, 0x2769, 0x2073, 0x726f, 0x6564, 0x0072, 
+    0
+END
+
+IDD_WIZARD_CURVETYPE DLGINIT
+BEGIN
+    IDC_COMBO_CURVE_TYPE, 0x403, 11, 0
+0x6542, 0x6c6c, 0x732d, 0x6168, 0x6570, "\000" 
+    IDC_COMBO_CURVE_TYPE, 0x403, 8, 0
+0x2d53, 0x6873, 0x7061, 0x0065, 
+    IDC_COMBO_CURVE_TYPE, 0x403, 8, 0
+0x2d5a, 0x6873, 0x7061, 0x0065, 
+    0
+END
+
+IDD_GdalTo3drDlg DLGINIT
+BEGIN
+    IDC_DataUnitCmb, 0x403, 7, 0
+0x654d, 0x6574, 0x7372, "\000" 
+    IDC_DataUnitCmb, 0x403, 5, 0
+0x6546, 0x7465, "\000" 
+    IDC_GridUnitCmb, 0x403, 7, 0
+0x654d, 0x6574, 0x7372, "\000" 
+    IDC_GridUnitCmb, 0x403, 5, 0
+0x6546, 0x7465, "\000" 
+    0
+END
+
+IDD_GdalTo3dmDlg DLGINIT
+BEGIN
+    IDC_DataUnitCmb, 0x403, 7, 0
+0x654d, 0x6574, 0x7372, "\000" 
+    IDC_DataUnitCmb, 0x403, 5, 0
+0x6546, 0x7465, "\000" 
+    IDC_GridUnitCmb, 0x403, 7, 0
+0x654d, 0x6574, 0x7372, "\000" 
+    IDC_GridUnitCmb, 0x403, 5, 0
+0x6546, 0x7465, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_DATABASE MENU 
+BEGIN
+    POPUP "Database"
+    BEGIN
+        MENUITEM "Add Layer",                   ID_DATABASE_ADDLAYER
+        MENUITEM "Data Location",               ID_DATABASE_DATALOCATION
+    END
+END
+
+IDR_MENU_DATALAYER MENU 
+BEGIN
+    POPUP "Datalayer"
+    BEGIN
+        MENUITEM "Delete",                      ID_DATALAYER_DELETE
+    END
+END
+
+IDR_MENU_SOILTYPE MENU 
+BEGIN
+    POPUP "Soil Type"
+    BEGIN
+        MENUITEM "Delete",                      ID_SOILTYPE_DELETE
+        MENUITEM "Rename",                      ID_SOILTYPE_RENAME
+    END
+END
+
+IDR_MENU_INSTANCES MENU 
+BEGIN
+    POPUP "Instances"
+    BEGIN
+        MENUITEM "Add Instance",                ID_INSTANCES_ADDINSTANCE
+    END
+END
+
+IDR_MENU_OCCURRENCES MENU 
+BEGIN
+    POPUP "Occurrences"
+    BEGIN
+        MENUITEM "Add Occurrence",              ID_OCCURRENCES_ADDOCCURRENCE
+    END
+END
+
+IDR_MENU_EXCLUSIONS MENU 
+BEGIN
+    POPUP "Exclusions"
+    BEGIN
+        MENUITEM "Add Exclusion",               ID_EXCLUSIONS_ADDEXCLUSION
+    END
+END
+
+IDR_MENU_INSTANCE MENU 
+BEGIN
+    POPUP "Instance"
+    BEGIN
+        POPUP "Add Rule"
+        BEGIN
+            MENUITEM "Range Rule",                  ID_ADDRULE_RANGERULE
+            MENUITEM "Freehand Rule",               ID_ADDRULE_FREEHANDRULE
+            MENUITEM "Enumerated Rule",             ID_ADDRULE_ENUMERATEDRULE
+
+        END
+        MENUITEM "Delete",                      ID_INSTANCE_DELETE
+        MENUITEM "Rename",                      ID_INSTANCE_RENAME
+        MENUITEM "Paste",                       ID_INSTANCE_PASTE
+    END
+END
+
+IDR_MENU_OCCURRENCE MENU 
+BEGIN
+    POPUP "Occurrence"
+    BEGIN
+        POPUP "Add Rule"
+        BEGIN
+            MENUITEM "Range Rule",                  ID_ADDRULE_RANGERULE
+            MENUITEM "Freehand Rule",               ID_ADDRULE_FREEHANDRULE
+            MENUITEM "Enumerated Rule",             ID_ADDRULE_ENUMERATEDRULE
+
+        END
+        MENUITEM "Delete",                      ID_OCCURRENCE_DELETE
+        MENUITEM "Rename",                      ID_OCCURRENCE_RENAME
+        MENUITEM "Paste",                       ID_OCCURRENCE_PASTE
+    END
+END
+
+IDR_MENU_EXCLUSION MENU 
+BEGIN
+    POPUP "Exclusion"
+    BEGIN
+        POPUP "Add Rule"
+        BEGIN
+            MENUITEM "Range Rule",                  ID_ADDRULE_RANGERULE
+            MENUITEM "Freehand Rule",               ID_ADDRULE_FREEHANDRULE
+            MENUITEM "Enumerated Rule",             ID_ADDRULE_ENUMERATEDRULE
+
+        END
+        MENUITEM "Delete",                      ID_EXCLUSION_DELETE
+        MENUITEM "Rename",                      ID_EXCLUSION_RENAME
+        MENUITEM "Paste",                       ID_EXCLUSION_PASTE
+    END
+END
+
+IDR_MENU_RULE MENU 
+BEGIN
+    POPUP "Rule"
+    BEGIN
+        MENUITEM "Delete",                      ID_RULE_DELETE
+        MENUITEM "Rename",                      ID_RULE_RENAME
+        MENUITEM "View Attached Layer",         ID_RULE_VIEWATTACHEDLAYER
+        MENUITEM "Copy",                        ID_RULE_COPY
+    END
+END
+
+IDR_MENU_KNOWLEDGEBASE MENU 
+BEGIN
+    POPUP "Knowledge Base"
+    BEGIN
+        MENUITEM "Add Soil Type",               ID_KNOWLEDGEBASE_ADDSOILTYPE
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "New",                         ID_PROJECT_NEW
+        MENUITEM "Open",                        ID_PROJECT_OPEN
+        MENUITEM "Save",                        ID_PROJECT_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SoLIM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 5,0,0,0
+ PRODUCTVERSION 5,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "FileDescription", "SoLIM Application"
+            VALUE "FileVersion", "5, 0, 0, 0"
+            VALUE "InternalName", "SoLIM"
+            VALUE "LegalCopyright", "Copyright (C) 2009"
+            VALUE "OriginalFilename", "SoLIMSolutions.EXE"
+            VALUE "ProductName", "SoLIMSolutions"
+            VALUE "ProductVersion", "5, 0, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\SoLIM.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "SoLIM\n\nSoLIM\n\n\nSoLIM.Document\nSoLIM Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "SoLIM"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PROJECT_NEW          "Create a new Project\nNew"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Colombia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESO)
+#ifdef _WIN32
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_COLOMBIA
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 10, 3\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SoLIM.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.esp\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.esp\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Spanish (Colombia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESP)
+#ifdef _WIN32
+LANGUAGE 10, 3
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SoLIM.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.esp\afxres.rc"          // Standard components
+#include "l.esp\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

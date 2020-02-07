@@ -1,0 +1,51 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GuiLib", "GuiLib.vcproj", "{3A5074D8-7A17-4602-9AD1-58D46661C937}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GuiLibDllStatic", "GuiLibDllStatic.vcproj", "{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GuiLibStatic", "GuiLibStatic.vcproj", "{F1033491-2374-4476-A775-580A96951165}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug Unicode = Debug Unicode
+		Release = Release
+		Release Unicode = Release Unicode
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Debug.ActiveCfg = Debug|Win32
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Debug.Build.0 = Debug|Win32
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Release.ActiveCfg = Release|Win32
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Release.Build.0 = Release|Win32
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{3A5074D8-7A17-4602-9AD1-58D46661C937}.Release Unicode.Build.0 = Release Unicode|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Debug.ActiveCfg = Debug|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Debug.Build.0 = Debug|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Release.ActiveCfg = Release|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Release.Build.0 = Release|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{330EB1F7-5B4F-4774-9AAB-0BDAD8D97C1E}.Release Unicode.Build.0 = Release Unicode|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Debug.ActiveCfg = Debug|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Debug.Build.0 = Debug|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Release.ActiveCfg = Release|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Release.Build.0 = Release|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{F1033491-2374-4476-A775-580A96951165}.Release Unicode.Build.0 = Release Unicode|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
