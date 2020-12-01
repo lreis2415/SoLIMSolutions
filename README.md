@@ -7,3 +7,6 @@ your program. Related publications on SoLIM can be found in Appendix
 D: SoLIM Publications in the Appendices of the SoLIM Solutions Help 
 system at: 
 http://solim.geography.wisc.edu/software/SoLIMSolutions2013/Help_HTML/index.html.
+
+#Executable download
+Go to branch "executable" and download the executable version of SoLIM Solutions
