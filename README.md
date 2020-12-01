@@ -9,4 +9,4 @@ system at:
 http://solim.geography.wisc.edu/software/SoLIMSolutions2013/Help_HTML/index.html.
 
 ## Executable download
-Go to branch "executable" and download the executable version of SoLIM Solutions
+Go to branch "[executable](https://github.com/lreis2415/SoLIM-Solutions-Source-Code/tree/executable)" and download the executable version of SoLIM Solutions
