@@ -1,0 +1,147 @@
+/***** NAVBAR *****/
+  
+  /* Change the link color on hover */
+
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: rgb(169, 182, 255);
+    color: white;    
+}
+.navbar-default .active {
+    background-color: #6669e4;
+    color: white;
+ }
+ 
+.navbar-default .navbar-nav > li > a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #26278f;
+    border-radius: 0;
+}
+
+/* Navbar title */
+.navbar-default .navbar-brand {
+    color: white;
+    font-size: px;
+    font-weight: bold;
+}
+
+/* Navbar hover effects */
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #f3cb1a;
+    text-decoration: none;
+}
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+    background-color: #2067b8;
+    border-radius: 4px;
+    border: 1px solid;
+    fill: #fff;
+    font-size: 16px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background-color: #6bbde4;
+    color: #ffffff;
+    fill: #ffffff;
+    border-color: #fff;
+
+}
+
+/** CONTENT**/
+.content {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.content h1{
+    vertical-align:middle;
+    text-align:center;
+}
+
+@media screen and (min-width: 1000px) {
+    .flex-parent {
+        display: flex;
+        margin-bottom: 50px;
+        align-items:center;
+        justify-content:center;
+    }
+    .text-child {
+        flex: 1;
+        width: 50%;
+        vertical-align: center;
+        text-align: justify;
+    }
+    .img-child{
+        flex: 1;
+        width: 50%;
+        vertical-align: center;
+        text-align: center;
+    }
+    .img-child img{
+        height: auto;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .flex-parent {
+        margin-bottom: 50px;
+        align-items:center;
+        justify-content:center;
+        display: flex;
+        flex-direction: column;
+    }
+    .text-child {
+        order: 2;
+        vertical-align: center;
+        text-align: justify;
+    }
+    .img-child{
+        order: 1;
+        vertical-align: center;
+        text-align: center;
+    }
+    .img-child img{
+        height: auto;
+    }
+}
+#index-image {
+    vertical-align: center;
+    text-align: center;
+}
+#index-image img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #456ffc;
+}
+
+a:hover {
+    color: #eb2287;
+}
+
+body {
+
+    font-family: 'Georgia', serif;
+    background-color: #f7f1fa;
+    color: #242424;
+}
