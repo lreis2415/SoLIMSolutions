@@ -127,11 +127,32 @@
     display: block;
   }
 
+#bottom-info {
+    background-color:#fff;
+    position: relative;
+    text-size-adjust: 50%;
+    
+}
+
+#bottom-info p{
+    font-size: 16px;
+    color:dimgrey;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.address{
+    text-indent: -40px;
+    padding-left: 80px;
+}
 p {
     font-size: 20px;
 }
 
 a {
+    text-decoration:underline;
     color: #456ffc;
 }
 
