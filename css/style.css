@@ -1,7 +1,12 @@
 /***** NAVBAR *****/
   
   /* Change the link color on hover */
-
+.navbar-default{
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
 .navbar-default .navbar-nav > li > a:hover{
     background-color: rgb(169, 182, 255);
     color: white;    
@@ -70,8 +75,19 @@
 .content h1{
     vertical-align:middle;
     text-align:center;
+    color: #26278f;
 }
-
+.content h2{
+    margin-top: 20px;
+    color: rgb(125, 77, 235);
+}
+.content h4{
+    color: darkslategrey;
+    font-style: italic;
+}
+.content p{
+    color: rgb(75, 75, 75);
+}
 @media screen and (min-width: 1000px) {
     .flex-parent {
         display: flex;
@@ -166,3 +182,59 @@ body {
     background-color: #f7f1fa;
     color: #242424;
 }
+
+.sidebar {
+    top: 70px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+  div.index {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }

@@ -38,38 +38,176 @@
             </div> <!-- end .navbar-collapse -->
         </div> <!-- end .container -->
     </nav>
-    <div class="content">
-
-        <h1>Overview</h1>
+    <div class="sidebar">
+        <a href="#overview">Overview</a>
+        <a href="#limitations">Limitations in the Current Soil Survey</a>
+        <a href="#approach">SoLIM Approach</a>
+        <a href="#results">SoLIM Results</a>
+      </div>
+    <div class="content index">
         
-        <div id="index-image" text-align="center">
-            <img src="images/solim_about.jpg" width="500px">
+        <div id="overview">
+            <br><br><br>
+            <h1>Overview</h1>
+            
+            <div id="index-image" text-align="center">
+                <img src="images/solim_about.jpg" width="500px">
+            </div>
+            <div>
+                <p>
+                    SoLIM (Soil Land Inference Model) is a new technology for soil mapping based on recent developments in 
+                    geographic information science (GISc), artificial intelligence (AI), and information representation 
+                    theory. SoLIM was designed to improve the methods, efficiency and accuracy of the soil survey. An 
+                    over-arching goal is to free survey soil scientists from burdensome cartographic tasks and thereby 
+                    make better use of their extensive understanding of soil-landscape relations and soil-forming processes.
+                </p>
+                <p>
+                    Case studies have shown that SoLIM could be faster and more accurate than traditional survey methods, 
+                    that it generates a range of products not available using the traditional approach, and that it can be 
+                    employed in a production mode of soil surveying.
+                </p>
+                <p>
+                    The SoLIM Project is a research endeavor originally funded by five-year grant from USDA's Natural 
+                    Resources Conservation Service. The principal investigators are Profs. A-Xing Zhu and Jim Burt of the 
+                    University of Wisconsin-Madison.
+                </p>
+            </div>
+            <div id="bottom-info">
+                <p>Contact us via <a href = "mailto:dsm_solim@yahoo.com">dsm_solim@yahoo.com </a> | 
+                    Follow us on <a href="https://twitter.com/DsmSolim">Twitter</a></p>
+            </div>
         </div>
-        <div>
+        <div id="limitations">
+            <br><br><br>
+            <h1>Limitations in the Current Soil Survey</h1>
+            <h2>Traditional Soil Survey</h2>
             <p>
-                SoLIM (Soil Land Inference Model) is a new technology for soil mapping based on recent developments in 
-                geographic information science (GISc), artificial intelligence (AI), and information representation 
-                theory. SoLIM was designed to improve the methods, efficiency and accuracy of the soil survey. An 
-                over-arching goal is to free survey soil scientists from burdensome cartographic tasks and thereby 
-                make better use of their extensive understanding of soil-landscape relations and soil-forming processes.
+                Traditional soil surveying is based on a classic concept known as the soil-landscape relationship. Through extensive field investigations a soil scientist first builds a conceptual model associating distinct soils with particular landscape positions and other environmental clues. The conceptual model is used with air photo interpretation to identify and delineate soil-landscape units, forming soil polygons. This traditional approach has several unavoidable limitations for efficient production of soil spatial information. These limitations are related to the use of a polygon-based model, the manual mapping process, and the lack of documentation on the soil-landscape model.
+            </p>
+            <h2>Limitations</h2>
+            <h4>Polygon-based model</h4>
+            <p>
+                With the polygon-based model only soil bodies above a certain size (scale-dependent) can be shown on the resulting soil map. Consequently, the level of detail is limited by the scale of the map, not by what the soil scientist knows. Also, the soils in a given soil polygon are often treated as homogenous bodies; changes in the soil property values occur only at the boundaries of the polygons. This creates a very unrealistic representation of spatial variation of soil properties.
+            </p>
+            <h4>Manual mapping process</h4>
+            <p>
+                The second limitation is the manual mapping process, during which surveyors manually delineate the extent of soil bodies based on visual interpretation of environmental conditions. It is very difficult for soil mappers to identify soil-landscape units using more than three environmental data layers, due to the limits of human capacity for simultaneous visual perception of multiple variables. As a result, the delineation of soil-landscape units may not reflect the totality of knowledge possessed by the surveyor. In fact, most soil mappers base their soil-unit delineation solely on the visual interpretation of stereophotos. Subtle and gradual changes in environmental conditions are often difficult to discern via stereoscoping, and it is easy to misplace the boundaries of soil polygons in the manual delineation process. Thus, the mapping process is not only tedious and time consuming, but can also be error-prone and inconsistent. In addition, the entire soil map production process must be repeated for each future soil survey update.
+            </p>
+            <h4>Lack of documentation</h4>
+            <p>
+                A third limitation is the lack of documentation on soil-landscape models for areas mapped. The key concerns here are the extent to which the soil-landscape model is being documented and the extent to which experience (knowledge) for a given area is being passed from one generation of soil mappers to the next. In most cases, knowledge of the soil-landscape model of an area is lost when the soil mapper retires or moves out of the area. The new surveyor must either start over from scratch, or must try to uncover original concepts only implicitly represented in the survey.
+            </p>
+            <h2>Summary</h2>
+            <p>
+                As a result of the above constraints, the traditional method has limited field soil scientists' ability to express their understanding of soil variation over space in an efficient and speedy way.
+            </p>
+        </div>
+        <div id="approach">
+            <br><br><br>
+            <h1>SoLIM Approach to Soil Survey</h1>
+            <p>The SoLIM approach employs recent developments in geographic information science (GISc), artificial intelligence (AI), and information representation theory.</p>
+            <h2>Moving Beyond the Polygon Map Model</h2>
+            <p>
+                SoLIM products are different from the traditional soil survey polygon map because SoLIM characterizes soils for small pixels using a similarity model. Pixel size is dependent on the resolution of the environmental data, not on the map scale. Pixels can 10 meters on each side, or even smaller if environmental data at that resolution are available. SoLIM represents the soil at each pixel as a collection of fuzzy membership values. Each membership value provides the similarity of the pixel's soil to a known soil type. Thus the full set of values provides the membership of the pixel's soil in the various soil classes identified by the expert. This combined raster/similarity representation allows portrayal of soil as a spatial continuum rather than as a set of discrete, homogenous polygons.
+            </p>
+            <h2>Knowledge Documentation</h2>
+            <p>
+                SoLIM extracts and stores knowledge on soil-landscape relationships, saving it in a "knowledgebase." This knowledgebase is stored separately from the map in a highly readable format, which allows future soil scientists studying the area to easily reconstruct soil-landscape relationships. Thus, knowledge of soil-landscape relationships can be easily passed on from one generation to the next and can be conveniently updated and improved on by future soil scientists.
+            </p>
+            <h2>Automating the Mapping Process</h2>
+            <p>
+                SoLIM automates the mapping process through the use of GIS techniques and a fuzzy inference engine. Environmental data layers related to soils, derived through a set of GIS techniques, are input into an inference engine. The inference engine combines the environmental data with knowledge extracted from soil experts or other sources and generates the soil similarity values (fuzzy membership values). The results are in georeferenced digital format and ready for analysis.
+            </p>
+            <h2>Summary</h2>
+            <p>
+                The raster similarity approach better expresses spatial and attribute information than polygon models. The automated mapping process improves the quality and consistency of soil information products and reduces the time needed to produce soil spatial information. The explicitly extracted and documented knowledge of soil-landscape relationships allows the knowledge to be accumulated over time and reduces the time needed to conduct future updates of soil spatial information. The modular design of SoLIM, i.e., the separation of environmental data layers (in the GIS) and the extracted knowledge (in the knowledgebase), allows each component to be updated independently and makes initial surveys and subsequent updates reusable. This not only saves time but also reduces costs, and thus significantly improves the efficiency of soil survey.
+            </p>
+            <div id="index-image" text-align="center">
+                <img src="images/modular.jpg" width="500px">
+            </div>
+        </div>
+        <div id="results">
+            <br><br><br>
+            <h1>SoLIM Results</h1>
+            <h2>Accuracy</h2>
+            <p>
+                The SoLIM approach has been tested at several sites and has achieved over 80 percent accuracy when compared with field observations. The accuracy of good conventional maps is about 60 percent.
+            </p>
+            <h2>Map Products</h2>
+            <p>
+                SoLIM produces two categories of output: the map products (various forms) and the extracted soil-landscape model (various formulations).
             </p>
             <p>
-                Case studies have shown that SoLIM could be faster and more accurate than traditional survey methods, 
-                that it generates a range of products not available using the traditional approach, and that it can be 
-                employed in a production mode of soil surveying.
+                Among the map products, there are fuzzy membership maps, raster soil categorical maps, uncertainty maps, and conventional soil polygon maps.
             </p>
+            <div  class='parent flex-parent'>
+                <div class='text-child'>
+                    <p>
+                        <b>Fuzzy membership maps </b>show the continuous gradation of membership of soils for a given soil type, assisting soil interpretation by providing more finely-grained soil spatial variation.
+                    </p>
+                </div>
+                <div class='img-child'>
+                    <img src="./images/fuzzyMembership.jpg" vertical-align="center" width="300px">
+                </div>
+            </div>
+            <div  class='parent flex-parent'>
+                <div class='text-child'>
+                    <p>
+                        <b>Conventional soil maps</b> can also be created by filtering out the small soil bodies from the detailed raster soil categorical maps. Inevitably some soil polygons will include small "island" soil bodies. These inclusions can be reported on a soil polygon basis, a substantial improvement over the conventional concept of mapping units.
+                    </p>
+                </div>
+                <div class='img-child'>
+                    <img src="./images/conventionalMap.jpg" vertical-align="center" width="300px">
+                </div>
+            </div>
+            <div  class='parent flex-parent'>
+                <div class='text-child'>
+                    <p>
+                        <b>Detailed raster soil categorical maps</b> contain soil bodies as small as a single pixel. This type of soil map is much more detailed than traditional soil maps. Uncertainty associated with the creation of the raster map from fuzzy membership maps can be produced to assess the validity of assigning local soils to prescribed soil types. 
+                    </p>
+                </div>
+                <div class='img-child'>
+                    <img src="./images/hardened.jpg" vertical-align="center" width="300px">
+                </div>
+            </div>
+            <div  class='parent flex-parent'>
+                <div class='text-child'>
+                    <p>
+                        <b>Soil property maps</b>, created using SoLIM fuzzy membership maps, can provide data concerning soil properties such as A-horizon depth and hydraulic conductivity at a previously unavailable high resolution.
+                    </p>
+                </div>
+                <div class='img-child'>
+                    <img src="./images/a_horizon.jpg" vertical-align="center" width="300px">
+                </div>
+            </div>
+            <h2>Knowledge Products</h2>
             <p>
-                The SoLIM Project is a research endeavor originally funded by five-year grant from USDA's Natural 
-                Resources Conservation Service. The principal investigators are Profs. A-Xing Zhu and Jim Burt of the 
-                University of Wisconsin-Madison.
+                The extracted soil-landscape model knowledge can be documented in several ways:
             </p>
+            <ul>
+                <li>Catenary sequences</li>
+                <li>Dichotomous keys</li>
+                <li>Soil-environment descriptions</li>
+                <li>Tacit points (typical locations for each soil type)</li>
+                <li>Fuzzy membership functions</li>
+            </ul>
+            <p>
+                These separate aspects of knowledge can be studied by current and future soil scientists, and can also be reused in future soil survey updates.
+            </p>
+            <h4 style="text-align: center">Example of Catenary Sequence</h4>
+            <div id="index-image" text-align="center">
+                <img src="images/catena.gif" width="500px">
+            </div>
+
         </div>
-        <div id="bottom-info">
-            <p>Contact us via <a href = "mailto:dsm_solim@yahoo.com">dsm_solim@yahoo.com </a> | 
-                Follow us on <a href="https://twitter.com/DsmSolim">Twitter</a></p>
-        </div>
+        <br><br><br>
     </div>
     <script type="text/javascript" src="lib/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--script type="text/javascript">
+        $(document).scroll(function () { var y = $(this).scrollTop(); if (y > 400) {$('.navbar').fadeOut();} else {$('.navbar').fadeIn();}});
+    </script-->
 </body>
 </html>
