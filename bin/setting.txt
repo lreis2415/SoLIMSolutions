@@ -1,1 +1,1 @@
-WorkingDir=D:/study/isolim/Tutorial data
+WorkingDir=D:/study/data_materials_resources/solim_test/isolim-test/isolim
