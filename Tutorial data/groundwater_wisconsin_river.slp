@@ -1,0 +1,1674 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Project Name="groundwater_wisconsin_river">
+    <StudyArea>wisconsin_river</StudyArea>
+    <GISData>
+        <Layer Name="twi" Type="CONTINUOUS">D:/study/isolim/Tutorial data/twi.tif</Layer>
+        <Layer Name="clay1" Type="CONTINUOUS">D:/study/isolim/Tutorial data/clay1.tif</Layer>
+        <Layer Name="rpi" Type="CONTINUOUS">D:/study/isolim/Tutorial data/rpi.tif</Layer>
+        <Layer Name="sand1" Type="CONTINUOUS">D:/study/isolim/Tutorial data/sand1.tif</Layer>
+    </GISData>
+    <Prototypes>
+        <PrototypeBase Basename="groundwater" Source="SAMPLE">
+            <Prototype BaseName="groundwater" ID="0" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>6.708783</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.947529 0.000000,5.193788 0.250000,5.637519 0.500000,6.018638 0.750000,6.708783 1.000000,7.398927 0.750000,7.780046 0.500000,8.223778 0.250000,9.470036 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>25.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>16.875491 0.000000,20.542391 0.250000,21.847994 0.500000,22.969371 0.750000,25.000000 1.000000,27.030629 0.750000,28.152006 0.500000,29.457609 0.250000,33.124509 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.568144</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.054909 0.000000,0.226299 0.250000,0.326423 0.500000,0.412419 0.750000,0.568144 1.000000,0.723869 0.750000,0.809865 0.500000,0.909989 0.250000,1.191197 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>11.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.661982 0.000000,-13.504332 0.250000,-6.327180 0.500000,-0.162759 0.750000,11.000000 1.000000,22.162759 0.750000,28.327180 0.500000,35.504332 0.250000,55.661982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">0.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.140028</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.341167</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.531792</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="1" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>6.708783</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.947529 0.000000,5.193788 0.250000,5.637519 0.500000,6.018638 0.750000,6.708783 1.000000,7.398927 0.750000,7.780046 0.500000,8.223778 0.250000,9.470036 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>25.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>16.875491 0.000000,20.542391 0.250000,21.847994 0.500000,22.969371 0.750000,25.000000 1.000000,27.030629 0.750000,28.152006 0.500000,29.457609 0.250000,33.124509 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.568144</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.054909 0.000000,0.226299 0.250000,0.326423 0.500000,0.412419 0.750000,0.568144 1.000000,0.723869 0.750000,0.809865 0.500000,0.909989 0.250000,1.191197 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>11.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.661982 0.000000,-13.504332 0.250000,-6.327180 0.500000,-0.162759 0.750000,11.000000 1.000000,22.162759 0.750000,28.327180 0.500000,35.504332 0.250000,55.661982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">1.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.143417</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.338639</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.614767</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="10" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.029457</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.027405 0.000000,5.382345 0.250000,5.864773 0.500000,6.279128 0.750000,7.029457 1.000000,7.779786 0.750000,8.194141 0.500000,8.676569 0.250000,10.031509 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>23.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>13.616251 0.000000,17.851493 0.250000,19.359456 0.500000,20.654638 0.750000,23.000000 1.000000,25.345362 0.750000,26.640544 0.500000,28.148507 0.250000,32.383749 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.391698</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.355595 0.000000,-0.018313 0.250000,0.101776 0.500000,0.204921 0.750000,0.391698 1.000000,0.578476 0.750000,0.681620 0.500000,0.801710 0.250000,1.138992 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>15.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.949975 0.000000,-11.856991 0.250000,-3.990761 0.500000,2.765506 0.750000,15.000000 1.000000,27.234494 0.750000,33.990761 0.500000,41.856991 0.250000,63.949975 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">10.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.159056</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.336306</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.772388</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="11" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>8.087463</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.048496 0.000000,5.871435 0.250000,6.520495 0.500000,7.077969 0.750000,8.087463 1.000000,9.096958 0.750000,9.654432 0.500000,10.303491 0.250000,12.126431 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>27.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>19.867880 0.000000,23.086877 0.250000,24.233004 0.500000,25.217407 0.750000,27.000000 1.000000,28.782593 0.750000,29.766996 0.500000,30.913123 0.250000,34.132120 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.087410</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.372176 0.000000,-0.164747 0.250000,-0.090892 0.500000,-0.027458 0.750000,0.087410 1.000000,0.202279 0.750000,0.265712 0.500000,0.339568 0.250000,0.546996 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>19.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-34.545303 0.000000,-10.378273 0.250000,-1.773576 0.500000,5.616955 0.750000,19.000000 1.000000,32.383045 0.750000,39.773576 0.500000,48.378273 0.250000,72.545303 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">11.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.520036</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.269831</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.036873</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="12" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>14.080748</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>12.162634 0.000000,13.028352 0.250000,13.336591 0.500000,13.601337 0.750000,14.080748 1.000000,14.560158 0.750000,14.824904 0.500000,15.133144 0.250000,15.998861 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>13.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-4.867779 0.000000,3.196629 0.250000,6.067970 0.500000,8.534150 0.750000,13.000000 1.000000,17.465850 0.750000,19.932030 0.500000,22.803371 0.250000,30.867779 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.466108</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.259600 0.000000,0.067940 0.250000,0.184560 0.500000,0.284725 0.750000,0.466108 1.000000,0.647491 0.750000,0.747656 0.500000,0.864276 0.250000,1.191816 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>78.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>48.242018 0.000000,61.672926 0.250000,66.455015 0.500000,70.562328 0.750000,78.000000 1.000000,85.437672 0.750000,89.544985 0.500000,94.327074 0.250000,107.757982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">12.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.181306</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.074222</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.975510</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="13" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>14.080748</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>12.162634 0.000000,13.028352 0.250000,13.336591 0.500000,13.601337 0.750000,14.080748 1.000000,14.560158 0.750000,14.824904 0.500000,15.133144 0.250000,15.998861 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>13.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-4.867779 0.000000,3.196629 0.250000,6.067970 0.500000,8.534150 0.750000,13.000000 1.000000,17.465850 0.750000,19.932030 0.500000,22.803371 0.250000,30.867779 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.466108</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.259600 0.000000,0.067940 0.250000,0.184560 0.500000,0.284725 0.750000,0.466108 1.000000,0.647491 0.750000,0.747656 0.500000,0.864276 0.250000,1.191816 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>78.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>48.242018 0.000000,61.672926 0.250000,66.455015 0.500000,70.562328 0.750000,78.000000 1.000000,85.437672 0.750000,89.544985 0.500000,94.327074 0.250000,107.757982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">13.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.181306</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.074222</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.959184</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="14" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>10.259952</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>5.321597 0.000000,7.550464 0.250000,8.344055 0.500000,9.025666 0.750000,10.259952 1.000000,11.494238 0.750000,12.175849 0.500000,12.969439 0.250000,15.198306 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>19.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>6.001494 0.000000,11.868214 0.250000,13.957066 0.500000,15.751170 0.750000,19.000000 1.000000,22.248830 0.750000,24.042934 0.500000,26.131786 0.250000,31.998506 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.611838</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>0.039532 0.000000,0.297835 0.250000,0.389805 0.500000,0.468796 0.750000,0.611838 1.000000,0.754879 0.750000,0.833871 0.500000,0.925840 0.250000,1.184143 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>30.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-34.579315 0.000000,-5.432217 0.250000,4.945639 0.500000,13.859128 0.750000,30.000000 1.000000,46.140872 0.750000,55.054361 0.500000,65.432217 0.250000,94.579315 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">14.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.222953</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.799917</Property>
+                    <Property Name="gw" Type="CONTINUOUS">1.000000</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="15" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.859212</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.074404 0.000000,5.782632 0.250000,6.390848 0.500000,6.913242 0.750000,7.859212 1.000000,8.805182 0.750000,9.327576 0.500000,9.935793 0.250000,11.644020 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>18.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>3.867155 0.000000,10.245845 0.250000,12.516984 0.500000,14.467655 0.750000,18.000000 1.000000,21.532345 0.750000,23.483016 0.500000,25.754155 0.250000,32.132845 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.369968</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.371181 0.000000,-0.036673 0.250000,0.082430 0.500000,0.184726 0.750000,0.369968 1.000000,0.555210 0.750000,0.657506 0.500000,0.776608 0.250000,1.111117 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>17.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-34.222374 0.000000,-11.103771 0.250000,-2.872367 0.500000,4.197545 0.750000,17.000000 1.000000,29.802455 0.750000,36.872367 0.500000,45.103771 0.250000,68.222374 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">15.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.728708</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.831989</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.979169</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="16" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>9.649298</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.350074 0.000000,6.741815 0.250000,7.593397 0.500000,8.324816 0.750000,9.649298 1.000000,10.973779 0.750000,11.705198 0.500000,12.556780 0.250000,14.948522 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>19.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>6.001494 0.000000,11.868214 0.250000,13.957066 0.500000,15.751170 0.750000,19.000000 1.000000,22.248830 0.750000,24.042934 0.500000,26.131786 0.250000,31.998506 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.074798</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.373589 0.000000,-0.171215 0.250000,-0.099159 0.500000,-0.037271 0.750000,0.074798 1.000000,0.186867 0.750000,0.248756 0.500000,0.320811 0.250000,0.523185 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>18.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-34.379824 0.000000,-10.738820 0.250000,-2.321414 0.500000,4.908253 0.750000,18.000000 1.000000,31.091747 0.750000,38.321414 0.500000,46.738820 0.250000,70.379824 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">16.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.956289</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-92.288361</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.956361</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="17" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>8.525070</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.978517 0.000000,6.030549 0.250000,6.761178 0.500000,7.388711 0.750000,8.525070 1.000000,9.661430 0.750000,10.288963 0.500000,11.019591 0.250000,13.071623 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>5.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.290810 0.000000,-0.646176 0.250000,1.007550 0.500000,2.427928 0.750000,5.000000 1.000000,7.572072 0.750000,8.992450 0.500000,10.646176 0.250000,15.290810 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.163961</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.371971 0.000000,-0.130085 0.250000,-0.043961 0.500000,0.030011 0.750000,0.163961 1.000000,0.297911 0.750000,0.371882 0.500000,0.458006 0.250000,0.699893 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>83.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>55.779936 0.000000,68.065385 0.250000,72.439633 0.500000,76.196652 0.750000,83.000000 1.000000,89.803348 0.750000,93.560367 0.500000,97.934615 0.250000,110.220064 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">17.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.985858</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.637997</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.910256</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="18" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>8.525070</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.978517 0.000000,6.030549 0.250000,6.761178 0.500000,7.388711 0.750000,8.525070 1.000000,9.661430 0.750000,10.288963 0.500000,11.019591 0.250000,13.071623 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>5.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.290810 0.000000,-0.646176 0.250000,1.007550 0.500000,2.427928 0.750000,5.000000 1.000000,7.572072 0.750000,8.992450 0.500000,10.646176 0.250000,15.290810 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.163961</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.371971 0.000000,-0.130085 0.250000,-0.043961 0.500000,0.030011 0.750000,0.163961 1.000000,0.297911 0.750000,0.371882 0.500000,0.458006 0.250000,0.699893 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>83.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>55.779936 0.000000,68.065385 0.250000,72.439633 0.500000,76.196652 0.750000,83.000000 1.000000,89.803348 0.750000,93.560367 0.500000,97.934615 0.250000,110.220064 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">18.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.991286</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.637311</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.899371</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="19" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>8.525070</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.978517 0.000000,6.030549 0.250000,6.761178 0.500000,7.388711 0.750000,8.525070 1.000000,9.661430 0.750000,10.288963 0.500000,11.019591 0.250000,13.071623 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>5.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.290810 0.000000,-0.646176 0.250000,1.007550 0.500000,2.427928 0.750000,5.000000 1.000000,7.572072 0.750000,8.992450 0.500000,10.646176 0.250000,15.290810 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.163961</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.371971 0.000000,-0.130085 0.250000,-0.043961 0.500000,0.030011 0.750000,0.163961 1.000000,0.297911 0.750000,0.371882 0.500000,0.458006 0.250000,0.699893 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>83.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>55.779936 0.000000,68.065385 0.250000,72.439633 0.500000,76.196652 0.750000,83.000000 1.000000,89.803348 0.750000,93.560367 0.500000,97.934615 0.250000,110.220064 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">19.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.992833</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.633261</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.766129</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="2" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>6.708783</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.947529 0.000000,5.193788 0.250000,5.637519 0.500000,6.018638 0.750000,6.708783 1.000000,7.398927 0.750000,7.780046 0.500000,8.223778 0.250000,9.470036 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>25.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>16.875491 0.000000,20.542391 0.250000,21.847994 0.500000,22.969371 0.750000,25.000000 1.000000,27.030629 0.750000,28.152006 0.500000,29.457609 0.250000,33.124509 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.568144</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.054909 0.000000,0.226299 0.250000,0.326423 0.500000,0.412419 0.750000,0.568144 1.000000,0.723869 0.750000,0.809865 0.500000,0.909989 0.250000,1.191197 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>11.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.661982 0.000000,-13.504332 0.250000,-6.327180 0.500000,-0.162759 0.750000,11.000000 1.000000,22.162759 0.750000,28.327180 0.500000,35.504332 0.250000,55.661982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">2.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.145000</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.342750</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.478795</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="20" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>10.690265</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>6.218989 0.000000,8.237046 0.250000,8.955577 0.500000,9.572720 0.750000,10.690265 1.000000,11.807810 0.750000,12.424952 0.500000,13.143484 0.250000,15.161540 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>3.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.835139 0.000000,-1.847505 0.250000,-0.427704 0.500000,0.791757 0.750000,3.000000 1.000000,5.208243 0.750000,6.427704 0.500000,7.847505 0.250000,11.835139 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.782871</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>0.374614 0.000000,0.558876 0.250000,0.624482 0.500000,0.680831 0.750000,0.782871 1.000000,0.884910 0.750000,0.941259 0.500000,1.006866 0.250000,1.191128 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>76.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>45.107664 0.000000,59.050549 0.250000,64.014928 0.500000,68.278809 0.750000,76.000000 1.000000,83.721191 0.750000,87.985072 0.500000,92.949451 0.250000,106.892336 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">20.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.995814</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.607753</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.003953</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="21" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>8.052482</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.053291 0.000000,5.858277 0.250000,6.500945 0.500000,7.052929 0.750000,8.052482 1.000000,9.052034 0.750000,9.604018 0.500000,10.246686 0.250000,12.051673 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>4.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.518526 0.000000,-1.222454 0.250000,0.307168 0.500000,1.620952 0.750000,4.000000 1.000000,6.379048 0.750000,7.692832 0.500000,9.222454 0.250000,13.518526 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.240253</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.382844 0.000000,-0.101616 0.250000,-0.001485 0.500000,0.084517 0.750000,0.240253 1.000000,0.395989 0.750000,0.481991 0.500000,0.582123 0.250000,0.863350 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>87.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>61.545068 0.000000,73.033846 0.250000,77.124438 0.500000,80.637827 0.750000,87.000000 1.000000,93.362173 0.750000,96.875562 0.500000,100.966154 0.250000,112.454932 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">22.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">43.996364</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.623078</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.166667</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="22" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>10.205086</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>5.215386 0.000000,7.467427 0.250000,8.269269 0.500000,8.957966 0.750000,10.205086 1.000000,11.452205 0.750000,12.140903 0.500000,12.942745 0.250000,15.194786 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>9.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.351301 0.000000,1.125986 0.250000,3.432231 0.500000,5.413054 0.750000,9.000000 1.000000,12.586946 0.750000,14.567769 0.500000,16.874014 0.250000,23.351301 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.728503</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>0.275672 0.000000,0.480052 0.250000,0.552821 0.500000,0.615323 0.750000,0.728503 1.000000,0.841683 0.750000,0.904185 0.500000,0.976954 0.250000,1.181334 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>78.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>48.242018 0.000000,61.672926 0.250000,66.455015 0.500000,70.562328 0.750000,78.000000 1.000000,85.437672 0.750000,89.544985 0.500000,94.327074 0.250000,107.757982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">23.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.007056</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.650503</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.478528</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="23" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.307640</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.069642 0.000000,5.531073 0.250000,6.051418 0.500000,6.498339 0.750000,7.307640 1.000000,8.116941 0.750000,8.563862 0.500000,9.084207 0.250000,10.545638 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>14.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-3.820034 0.000000,4.222824 0.250000,7.086493 0.500000,9.546083 0.750000,14.000000 1.000000,18.453917 0.750000,20.913507 0.500000,23.777176 0.250000,31.820034 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.663749</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>0.148434 0.000000,0.381015 0.250000,0.463826 0.500000,0.534952 0.750000,0.663749 1.000000,0.792546 0.750000,0.863672 0.500000,0.946483 0.250000,1.179064 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>49.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-6.362662 0.000000,18.624611 0.250000,27.521356 0.500000,35.162727 0.750000,49.000000 1.000000,62.837273 0.750000,70.478644 0.500000,79.375389 0.250000,104.362662 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">24.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.058139</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-92.432703</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.996904</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="24" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>10.735509</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>6.316844 0.000000,8.311155 0.250000,9.021232 0.500000,9.631113 0.750000,10.735509 1.000000,11.839904 0.750000,12.449786 0.500000,13.159862 0.250000,15.154174 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>3.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.835139 0.000000,-1.847505 0.250000,-0.427704 0.500000,0.791757 0.750000,3.000000 1.000000,5.208243 0.750000,6.427704 0.500000,7.847505 0.250000,11.835139 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.156613</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.371393 0.000000,-0.133084 0.250000,-0.048234 0.500000,0.024644 0.750000,0.156613 1.000000,0.288582 0.750000,0.361460 0.500000,0.446310 0.250000,0.684619 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>90.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>65.737122 0.000000,76.687881 0.250000,80.586910 0.500000,83.935767 0.750000,90.000000 1.000000,96.064233 0.750000,99.413090 0.500000,103.312119 0.250000,114.262878 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">25.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.120497</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.535708</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.727273</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="25" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>10.093402</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>5.008327 0.000000,7.303415 0.250000,8.120583 0.500000,8.822445 0.750000,10.093402 1.000000,11.364359 0.750000,12.066221 0.500000,12.883389 0.250000,15.178476 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>6.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.161250 0.000000,-0.123754 0.250000,1.669852 0.500000,3.210371 0.750000,6.000000 1.000000,8.789629 0.750000,10.330148 0.500000,12.123754 0.250000,17.161250 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.483796</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.228250 0.000000,0.093123 0.250000,0.207549 0.500000,0.305828 0.750000,0.483796 1.000000,0.661764 0.750000,0.760043 0.500000,0.874469 0.250000,1.195842 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>82.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>54.303789 0.000000,66.804141 0.250000,71.254905 0.500000,75.077644 0.750000,82.000000 1.000000,88.922356 0.750000,92.745095 0.500000,97.195859 0.250000,109.696211 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">26.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.140906</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.430461</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.000000</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="26" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>12.869838</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>10.384376 0.000000,11.506159 0.250000,11.905572 0.500000,12.248625 0.750000,12.869838 1.000000,13.491051 0.750000,13.834104 0.500000,14.233516 0.250000,15.355299 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>2.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-6.230186 0.000000,-2.515591 0.250000,-1.193005 0.500000,-0.057042 0.750000,2.000000 1.000000,4.057042 0.750000,5.193005 0.500000,6.515591 0.250000,10.230186 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.360155</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.376445 0.000000,-0.043989 0.250000,0.074382 0.500000,0.176050 0.750000,0.360155 1.000000,0.544260 0.750000,0.645928 0.500000,0.764299 0.250000,1.096754 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>85.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>58.689293 0.000000,70.564315 0.250000,74.792429 0.500000,78.423935 0.750000,85.000000 1.000000,91.576065 0.750000,95.207571 0.500000,99.435685 0.250000,111.310707 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">28.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.199892</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.456769</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.833333</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="27" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>8.721996</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.955510 0.000000,6.106806 0.250000,6.872778 0.500000,7.530667 0.750000,8.721996 1.000000,9.913326 0.750000,10.571215 0.500000,11.337186 0.250000,13.488483 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>3.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.835139 0.000000,-1.847505 0.250000,-0.427704 0.500000,0.791757 0.750000,3.000000 1.000000,5.208243 0.750000,6.427704 0.500000,7.847505 0.250000,11.835139 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.568688</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.053731 0.000000,0.227191 0.250000,0.327213 0.500000,0.413121 0.750000,0.568688 1.000000,0.724254 0.750000,0.810163 0.500000,0.910185 0.250000,1.191107 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>77.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>46.684037 0.000000,60.366783 0.250000,65.238539 0.500000,69.422867 0.750000,77.000000 1.000000,84.577133 0.750000,88.761461 0.500000,93.633217 0.250000,107.315963 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">29.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.206883</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.468003</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.845528</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="28" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>11.297413</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>7.519615 0.000000,9.224678 0.250000,9.831768 0.500000,10.353195 0.750000,11.297413 1.000000,12.241631 0.750000,12.763057 0.500000,13.370147 0.250000,15.075211 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>8.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.206404 0.000000,0.754148 0.250000,2.876409 0.500000,4.699208 0.750000,8.000000 1.000000,11.300792 0.750000,13.123591 0.500000,15.245852 0.250000,21.206404 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.800000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>0.404392 0.000000,0.582945 0.250000,0.646519 0.500000,0.701122 0.750000,0.800000 1.000000,0.898878 0.750000,0.953481 0.500000,1.017055 0.250000,1.195608 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>76.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>45.107664 0.000000,59.050549 0.250000,64.014928 0.500000,68.278809 0.750000,76.000000 1.000000,83.721191 0.750000,87.985072 0.500000,92.949451 0.250000,106.892336 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">30.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.213278</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.547983</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.963989</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="29" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>12.068499</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>9.024169 0.000000,10.398191 0.250000,10.887413 0.500000,11.307603 0.750000,12.068499 1.000000,12.829394 0.750000,13.249585 0.500000,13.738807 0.250000,15.112828 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>2.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-6.230186 0.000000,-2.515591 0.250000,-1.193005 0.500000,-0.057042 0.750000,2.000000 1.000000,4.057042 0.750000,5.193005 0.500000,6.515591 0.250000,10.230186 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.714286</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>0.248624 0.000000,0.458795 0.250000,0.533627 0.500000,0.597899 0.750000,0.714286 1.000000,0.830673 0.750000,0.894945 0.500000,0.969776 0.250000,1.179947 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>81.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>52.812549 0.000000,65.534616 0.250000,70.064322 0.500000,73.954864 0.750000,81.000000 1.000000,88.045136 0.750000,91.935678 0.500000,96.465384 0.250000,109.187451 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">31.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.214753</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.508486</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.813688</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="3" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>6.708783</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.947529 0.000000,5.193788 0.250000,5.637519 0.500000,6.018638 0.750000,6.708783 1.000000,7.398927 0.750000,7.780046 0.500000,8.223778 0.250000,9.470036 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>25.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>16.875491 0.000000,20.542391 0.250000,21.847994 0.500000,22.969371 0.750000,25.000000 1.000000,27.030629 0.750000,28.152006 0.500000,29.457609 0.250000,33.124509 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.568144</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.054909 0.000000,0.226299 0.250000,0.326423 0.500000,0.412419 0.750000,0.568144 1.000000,0.723869 0.750000,0.809865 0.500000,0.909989 0.250000,1.191197 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>11.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.661982 0.000000,-13.504332 0.250000,-6.327180 0.500000,-0.162759 0.750000,11.000000 1.000000,22.162759 0.750000,28.327180 0.500000,35.504332 0.250000,55.661982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">3.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.147417</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.338000</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.638393</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="30" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.330311</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.071914 0.000000,5.542552 0.250000,6.066175 0.500000,6.515911 0.750000,7.330311 1.000000,8.144710 0.750000,8.594447 0.500000,9.118069 0.250000,10.588708 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>15.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-2.290513 0.000000,5.513353 0.250000,8.291927 0.500000,10.678431 0.750000,15.000000 1.000000,19.321569 0.750000,21.708073 0.500000,24.486647 0.250000,32.290513 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.433634</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.309334 0.000000,0.025996 0.250000,0.145390 0.500000,0.247937 0.750000,0.433634 1.000000,0.619330 0.750000,0.721877 0.500000,0.841272 0.250000,1.176601 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>51.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-2.028902 0.000000,21.905056 0.250000,30.426768 0.500000,37.746024 0.750000,51.000000 1.000000,64.253976 0.750000,71.573232 0.500000,80.094944 0.250000,104.028902 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">32.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.295461</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-91.258661</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.825784</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="31" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>10.020925</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.881525 0.000000,7.201131 0.250000,8.027030 0.500000,8.736390 0.750000,10.020925 1.000000,11.305460 0.750000,12.014820 0.500000,12.840718 0.250000,15.160324 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>12.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.422321 0.000000,2.441034 0.250000,5.240791 0.500000,7.645487 0.750000,12.000000 1.000000,16.354513 0.750000,18.759209 0.500000,21.558966 0.250000,29.422321 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.456011</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.276233 0.000000,0.054257 0.250000,0.171928 0.500000,0.272995 0.750000,0.456011 1.000000,0.639028 0.750000,0.740095 0.500000,0.857766 0.250000,1.188256 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>35.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-31.111356 0.000000,-1.272789 0.250000,9.351265 0.500000,18.476212 0.750000,35.000000 1.000000,51.523788 0.750000,60.648735 0.500000,71.272789 0.250000,101.111356 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">33.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.786106</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-89.448319</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.666667</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="32" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>11.787169</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>8.499066 0.000000,9.983112 0.250000,10.511508 0.500000,10.965345 0.750000,11.787169 1.000000,12.608994 0.750000,13.062831 0.500000,13.591227 0.250000,15.075273 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>5.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.290810 0.000000,-0.646176 0.250000,1.007550 0.500000,2.427928 0.750000,5.000000 1.000000,7.572072 0.750000,8.992450 0.500000,10.646176 0.250000,15.290810 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.730577</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>0.279575 0.000000,0.483129 0.250000,0.555605 0.500000,0.617854 0.750000,0.730577 1.000000,0.843299 0.750000,0.905548 0.500000,0.978024 0.250000,1.181578 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>80.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>51.305602 0.000000,64.256474 0.250000,68.867646 0.500000,72.828159 0.750000,80.000000 1.000000,87.171841 0.750000,91.132354 0.500000,95.743526 0.250000,108.694398 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">34.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">44.910744</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-91.265900</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.000000</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="33" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>9.039497</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>3.968272 0.000000,6.257109 0.250000,7.072051 0.500000,7.772002 0.750000,9.039497 1.000000,10.306993 0.750000,11.006943 0.500000,11.821886 0.250000,14.110723 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>12.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.422321 0.000000,2.441034 0.250000,5.240791 0.500000,7.645487 0.750000,12.000000 1.000000,16.354513 0.750000,18.759209 0.500000,21.558966 0.250000,29.422321 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.579655</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.029961 0.000000,0.245182 0.250000,0.343147 0.500000,0.427289 0.750000,0.579655 1.000000,0.732022 0.750000,0.816163 0.500000,0.914128 0.250000,1.189271 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>11.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.661982 0.000000,-13.504332 0.250000,-6.327180 0.500000,-0.162759 0.750000,11.000000 1.000000,22.162759 0.750000,28.327180 0.500000,35.504332 0.250000,55.661982 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">35.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">45.163111</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.811344</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.797414</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="34" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>9.486679</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.189449 0.000000,6.580290 0.250000,7.431552 0.500000,8.162696 0.750000,9.486679 1.000000,10.810662 0.750000,11.541806 0.500000,12.393068 0.250000,14.783909 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>10.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.511779 0.000000,1.489276 0.250000,3.982010 0.500000,6.123006 0.750000,10.000000 1.000000,13.876994 0.750000,16.017990 0.500000,18.510724 0.250000,25.511779 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.350529</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.380612 0.000000,-0.050620 0.250000,0.066874 0.500000,0.167788 0.750000,0.350529 1.000000,0.533269 0.750000,0.634184 0.500000,0.751678 0.250000,1.081669 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>59.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>14.787235 0.000000,34.742136 0.250000,41.847100 0.500000,47.949518 0.750000,59.000000 1.000000,70.050482 0.750000,76.152900 0.500000,83.257864 0.250000,103.212765 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">36.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">45.310069</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.596736</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.653595</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="35" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>12.174257</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>9.214675 0.000000,10.550447 0.250000,11.026050 0.500000,11.434543 0.750000,12.174257 1.000000,12.913971 0.750000,13.322464 0.500000,13.798067 0.250000,15.133839 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>8.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>-5.206404 0.000000,0.754148 0.250000,2.876409 0.500000,4.699208 0.750000,8.000000 1.000000,11.300792 0.750000,13.123591 0.500000,15.245852 0.250000,21.206404 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.458623</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.272026 0.000000,0.057743 0.250000,0.175158 0.500000,0.276005 0.750000,0.458623 1.000000,0.641240 0.750000,0.742087 0.500000,0.859502 0.250000,1.189272 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>45.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-14.854200 0.000000,12.160275 0.250000,21.778808 0.500000,30.040117 0.750000,45.000000 1.000000,59.959883 0.750000,68.221192 0.500000,77.839725 0.250000,104.854200 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">37.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">45.815631</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.179417</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.723684</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="4" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.680516</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.084169 0.000000,5.707337 0.250000,6.285268 0.500000,6.781649 0.750000,7.680516 1.000000,8.579382 0.750000,9.075764 0.500000,9.653695 0.250000,11.276863 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>22.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>11.861431 0.000000,16.437352 0.250000,18.066614 0.500000,19.465979 0.750000,22.000000 1.000000,24.534021 0.750000,25.933386 0.500000,27.562648 0.250000,32.138569 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.084626</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.372454 0.000000,-0.166156 0.250000,-0.092704 0.500000,-0.029616 0.750000,0.084626 1.000000,0.198868 0.750000,0.261956 0.500000,0.335409 0.250000,0.541707 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>10.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.654516 0.000000,-13.951574 0.250000,-6.936320 0.500000,-0.910954 0.750000,10.000000 1.000000,20.910954 0.750000,26.936320 0.500000,33.951574 0.250000,53.654516 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">4.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.148861</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.332750</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.870130</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="5" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.680516</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.084169 0.000000,5.707337 0.250000,6.285268 0.500000,6.781649 0.750000,7.680516 1.000000,8.579382 0.750000,9.075764 0.500000,9.653695 0.250000,11.276863 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>22.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>11.861431 0.000000,16.437352 0.250000,18.066614 0.500000,19.465979 0.750000,22.000000 1.000000,24.534021 0.750000,25.933386 0.500000,27.562648 0.250000,32.138569 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.084626</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.372454 0.000000,-0.166156 0.250000,-0.092704 0.500000,-0.029616 0.750000,0.084626 1.000000,0.198868 0.750000,0.261956 0.500000,0.335409 0.250000,0.541707 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>10.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.654516 0.000000,-13.951574 0.250000,-6.936320 0.500000,-0.910954 0.750000,10.000000 1.000000,20.910954 0.750000,26.936320 0.500000,33.951574 0.250000,53.654516 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">5.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.150639</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.339139</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.786499</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="6" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.680516</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.084169 0.000000,5.707337 0.250000,6.285268 0.500000,6.781649 0.750000,7.680516 1.000000,8.579382 0.750000,9.075764 0.500000,9.653695 0.250000,11.276863 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>22.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>11.861431 0.000000,16.437352 0.250000,18.066614 0.500000,19.465979 0.750000,22.000000 1.000000,24.534021 0.750000,25.933386 0.500000,27.562648 0.250000,32.138569 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.084626</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.372454 0.000000,-0.166156 0.250000,-0.092704 0.500000,-0.029616 0.750000,0.084626 1.000000,0.198868 0.750000,0.261956 0.500000,0.335409 0.250000,0.541707 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>10.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.654516 0.000000,-13.951574 0.250000,-6.936320 0.500000,-0.910954 0.750000,10.000000 1.000000,20.910954 0.750000,26.936320 0.500000,33.951574 0.250000,53.654516 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">6.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.153361</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.334556</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.941083</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="7" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.680516</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.084169 0.000000,5.707337 0.250000,6.285268 0.500000,6.781649 0.750000,7.680516 1.000000,8.579382 0.750000,9.075764 0.500000,9.653695 0.250000,11.276863 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>22.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>11.861431 0.000000,16.437352 0.250000,18.066614 0.500000,19.465979 0.750000,22.000000 1.000000,24.534021 0.750000,25.933386 0.500000,27.562648 0.250000,32.138569 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.084626</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.372454 0.000000,-0.166156 0.250000,-0.092704 0.500000,-0.029616 0.750000,0.084626 1.000000,0.198868 0.750000,0.261956 0.500000,0.335409 0.250000,0.541707 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>10.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.654516 0.000000,-13.951574 0.250000,-6.936320 0.500000,-0.910954 0.750000,10.000000 1.000000,20.910954 0.750000,26.936320 0.500000,33.951574 0.250000,53.654516 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">7.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.155500</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.338278</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.778291</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="8" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.029457</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.027405 0.000000,5.382345 0.250000,5.864773 0.500000,6.279128 0.750000,7.029457 1.000000,7.779786 0.750000,8.194141 0.500000,8.676569 0.250000,10.031509 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>23.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>13.616251 0.000000,17.851493 0.250000,19.359456 0.500000,20.654638 0.750000,23.000000 1.000000,25.345362 0.750000,26.640544 0.500000,28.148507 0.250000,32.383749 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.391698</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.355595 0.000000,-0.018313 0.250000,0.101776 0.500000,0.204921 0.750000,0.391698 1.000000,0.578476 0.750000,0.681620 0.500000,0.801710 0.250000,1.138992 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>15.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.949975 0.000000,-11.856991 0.250000,-3.990761 0.500000,2.765506 0.750000,15.000000 1.000000,27.234494 0.750000,33.990761 0.500000,41.856991 0.250000,63.949975 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">8.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.156917</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.336000</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.819398</Property>
+                </PropertyLib>
+            </Prototype>
+            <Prototype BaseName="groundwater" ID="9" Source="SAMPLE">
+                <CurveLib>
+                    <EnvAttri Name="twi">
+                        <TypicalValue>7.029457</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>18.509014</Range>
+                            <Coordinates>4.027405 0.000000,5.382345 0.250000,5.864773 0.500000,6.279128 0.750000,7.029457 1.000000,7.779786 0.750000,8.194141 0.500000,8.676569 0.250000,10.031509 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="clay1">
+                        <TypicalValue>23.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>42.410000</Range>
+                            <Coordinates>13.616251 0.000000,17.851493 0.250000,19.359456 0.500000,20.654638 0.750000,23.000000 1.000000,25.345362 0.750000,26.640544 0.500000,28.148507 0.250000,32.383749 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="rpi">
+                        <TypicalValue>0.391698</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>1.010000</Range>
+                            <Coordinates>-0.355595 0.000000,-0.018313 0.250000,0.101776 0.500000,0.204921 0.750000,0.391698 1.000000,0.578476 0.750000,0.681620 0.500000,0.801710 0.250000,1.138992 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                    <EnvAttri Name="sand1">
+                        <TypicalValue>15.000000</TypicalValue>
+                        <Curve>
+                            <NodeNum>9</NodeNum>
+                            <DataType>CONTINUOUS</DataType>
+                            <Range>95.950000</Range>
+                            <Coordinates>-33.949975 0.000000,-11.856991 0.250000,-3.990761 0.500000,2.765506 0.750000,15.000000 1.000000,27.234494 0.750000,33.990761 0.500000,41.856991 0.250000,63.949975 0.000000</Coordinates>
+                        </Curve>
+                    </EnvAttri>
+                </CurveLib>
+                <PropertyLib>
+                    <Property Name="FID" Type="CONTINUOUS">9.000000</Property>
+                    <Property Name="lat" Type="CONTINUOUS">42.158611</Property>
+                    <Property Name="lon" Type="CONTINUOUS">-90.333611</Property>
+                    <Property Name="gw" Type="CONTINUOUS">0.871914</Property>
+                </PropertyLib>
+            </Prototype>
+        </PrototypeBase>
+    </Prototypes>
+    <Results>
+        <ResultFile>D:/study/isolim/Tutorial data/gw.tif</ResultFile>
+        <ResultFile>D:/study/isolim/Tutorial data/gw_uncer.tif</ResultFile>
+    </Results>
+</Project>
