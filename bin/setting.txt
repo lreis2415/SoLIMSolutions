@@ -1,1 +1,1 @@
-WorkingDir=./
+WorkingDir=C:/work
